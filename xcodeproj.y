@@ -76,11 +76,10 @@ extern "C"
     #endif
 }
 
-%token <string>         ID
 %token <intValue>       INTEGER
+%token <string>         ID
 %token <string>         WORD
 %token <string>         STRING
-
 %token <string>         PREAMBLE
 %token <string>         COMMENT
 
@@ -201,5 +200,4 @@ array       :   LBRACKET values RBRACKET
                     printf("array ");
                 }
                 ;
-
 %%
