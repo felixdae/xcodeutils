@@ -18,13 +18,32 @@
 %option yylineno
 
 %%
-\/\/.*$                     {   return PREAMBLE;    } // one line
-\/\*[^\*\/]*\*\/            {   return COMMENT;     } // inline
-[0-9A-F]{24,24}             {   return ID;          }
--?[0-9]+                    {   return INTEGER;     }
-[a-zA-Z\.\/\$\-_\*\<\>]+    {   return WORD;        }
+\/\/.*$                     {   yylval.string = strdup(yytext);
+                                return PREAMBLE;    
+                            } // one line
+                            
+\/\*[^\*\/]*\*\/            {   yylval.string = strdup(yytext);
+                                return COMMENT;     
+                            } // inline
+                            
+[0-9A-F]{24,24}             {   yylval.string = strdup(yytext);
+                                return ID;          
+                            }
+                            
+-?[0-9]+                    {   yylval.intValue = atoi(yytext);
+                                return INTEGER;     
+                            }
+                            
+[a-zA-Z\.\/\$\-_\*\<\>]+    {   yylval.string = strdup(yytext);
+                                return WORD;        
+                            }
+                            
 =                           {   return ASSIGN;      }
-\"[^"]*\"                   {   return STRING;      }
+
+\"[^"]*\"                   {   yylval.string = strdup(yytext);
+                                return STRING;      
+                            }
+                                                        
 ,                           {   return COMMA;       }
 ;                           {   return SEMICOLON;   }
 \{                          {   return OBRACE;      }

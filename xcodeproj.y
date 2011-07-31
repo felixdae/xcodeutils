@@ -37,11 +37,11 @@ extern "C"
         fprintf(stdout, "[%d]error: %s\n", yylineno, str);
     }
     
-    bool loadFile(const char* filePath)
+    static PBXDocument* gpDoc = NULL;
+    bool loadDocument(const char* filePath, PBXDocument **pDoc)
     {
-        if (filePath == NULL) {
+        if (filePath == NULL || pDoc == NULL)
             return false;
-        }
         
         //determine file exists.
         struct stat tmp;
@@ -49,20 +49,25 @@ extern "C"
             return false;
 
         //init
+        *pDoc = NULL;
+        gpDoc = NULL;
+        sFailed = false;
         
         //parse
         yyin = fopen(filePath, "r");
         yyparse();
         
+        if (sFailed)
+            delete gpDoc;
+        else
+            *pDoc = gpDoc;
+        
+        gpDoc = NULL;
         yyin = NULL;
         fclose(yyin);
-        
-        printf("\nparse complete\n");
-        
+                
         return !sFailed;
     }
-
-    
 }
     
 %}
@@ -73,6 +78,11 @@ extern "C"
     int intValue;
     char * string;
     #ifdef __cplusplus
+    PBXDocument     * document;
+    PBXStatement    * statement;
+    PBXBlock        * block;
+    PBXArray        * array;
+    PBXValue        * value;
     #endif
 }
 
@@ -83,17 +93,17 @@ extern "C"
 %token <string>         PREAMBLE
 %token <string>         COMMENT
 
+
 %token COMMA LBRACKET RBRACKET OBRACE EBRACE SEMICOLON QUOTE ASSIGN
 
-/*
+%type <string>      variable
 %type <document>    document
 %type <block>       block
-%type <statement>   statement
-%type <statements>  statements
 %type <array>       array
+%type <statement>   statement
+%type <block>       statements
 %type <value>       value
-%type <var>         key
- */
+%type <array>       values
 
 %start document
 
@@ -101,103 +111,143 @@ extern "C"
 
 document    :   PREAMBLE block
                 {
-                    printf("document ");
+                    $$ = new PBXDocument($1, $2);
+                    gpDoc = $$;
+                    //printf("document ");
                 }
                 ;
 
 block       :   OBRACE statements EBRACE
                 {
-                    printf("block ");
+                    $$ = $2;
+                    //printf("block ");
                 }
                 ;
 
 statements  :   /* Empty */
+                {
+                    $$ = new PBXBlock;
+                }
+                ;
               | statements statement
+                {
+                    $1->addStatement($2);
+                    $$ = $1;
+                }
+                ;
 
 statement   :   variable         ASSIGN value         SEMICOLON
                 {
-                    printf("statement1 ");
+                    $$ = new PBXAssignment($1, $3);
+                    //printf("statement1 ");
                 }
                 ;
               | variable COMMENT ASSIGN value         SEMICOLON
                 {
-                    printf("statement2 ");
+                    PBXAssignment *assign = new PBXAssignment($1, $4);
+                    assign->setKeyComment($2);
+                    $$ = assign;
+                    //printf("statement2 ");
                 }
                 ;              
               | variable         ASSIGN value COMMENT SEMICOLON
                 {
-                    printf("statement3 ");
+                    $3->setComment($4);
+                    $$ = new PBXAssignment($1, $3);
+                    //printf("statement3 ");
                 }
                 ;              
               | variable COMMENT ASSIGN value COMMENT SEMICOLON  
                 {
-                    printf("statement4 ");
+                    $4->setComment($5);
+                    PBXAssignment *assign = new PBXAssignment($1, $4);
+                    assign->setKeyComment($2);
+                    $$ = assign;
+                    //printf("statement4 ");
                 }
                 ;
               | COMMENT
                 {
-                    printf("statement5 ");
+                    $$ = new PBXCommentStatement($1);
+                    //printf("statement5 ");
                 }
                 ;
                 
 variable    :   ID
                 {
-                    printf("var-id ");
+                    $$ = $1;
+                    //printf("var-id ");
                 }
                 ;
               | WORD
                 {
-                    printf("var-word ");
+                    $$ = $1;
+                    //printf("var-word ");
                 }
                 ;               
                 
                 
 value       :   ID
                 {
-                    printf("value-id ");
+                    $$ = new PBXValueRef($1);
+                    //printf("value-id ");
                 }
                 ;
               | INTEGER
                 {
-                    printf("value-int ");
+                    $$ = new PBXInteger($1);
+                    //printf("value-int ");
                 }
                 ;
               | WORD
                 {
-                    printf("value-word ");
+                    $$ = new PBXText($1);
+                    //printf("value-word ");
                 }
                 ;
               | STRING
                 {
-                    printf("value-string ");
+                    $$ = new PBXText($1);
+                    //printf("value-string ");
                 }
                 ;
               | block
                 {
-                    printf("value-block ");
+                    $$ = $1;
+                    //printf("value-block ");
                 }
                 ;
               | array
                 {
-                    printf("value-array ");
+                    $$ = $1;
+                    //printf("value-array ");
                 }
                 ;
 
 values      :   /* Empty */
+                {
+                    $$ = new PBXArray;
+                }
                 ;
               |  values value COMMA
                 {
-                    printf("values ");
+                    $1->addValue($2);
+                    $$ = $1;
+                    //printf("values ");
                 }
               |  values value COMMENT COMMA
                 {
-                    printf("values-comment ");
+                    $2->setComment($3);
+                    $1->addValue($2);
+                    $$ = $1;
+                    //printf("values-comment ");
                 }
                 ;
 
 array       :   LBRACKET values RBRACKET
                 {
-                    printf("array ");
+                    $$ = $2;
+                    //printf("array ");
                 }
                 ;
 %%

@@ -13,7 +13,6 @@
 #include <map>
 #include <string>
 
-extern "C" bool loadFile(const char* filePath);
 
 
 
@@ -23,6 +22,8 @@ protected:
 public:
     virtual ~PBXStatement();
 };
+
+typedef std::list<PBXStatement*> PBXStatementList;
 
 class PBXValue {
     std::string mComment;
@@ -34,6 +35,8 @@ public:
     std::string comment() const;
     void setComment(const std::string& newComment);
 };
+
+typedef std::list<PBXValue*> PBXValueList;
 
 class PBXValueRef : public PBXValue {
     std::string mId;
@@ -58,32 +61,32 @@ public:
 
 
 class PBXBlock : public PBXValue {
-    std::list<PBXStatement*>  statements;
-    PBXBlock(const std::list<PBXStatement*>& other);
+    PBXStatementList  mStatements;
+    PBXBlock(const PBXStatementList& other);
 public:
     PBXBlock();
     virtual ~PBXBlock();
     void addStatement(PBXStatement* statement);
     
-    std::list<PBXStatement*>::const_iterator begin() const;
-    std::list<PBXStatement*>::const_iterator end()   const;
+    PBXStatementList::const_iterator begin() const;
+    PBXStatementList::const_iterator end()   const;
 };   
 
 class PBXArray : public PBXValue {
-    std::list<PBXValue*> values;
+    PBXValueList mValues;
 public:
     PBXArray();
     virtual ~PBXArray();
     void addValue(PBXValue* value);
     
-    std::list<PBXValue*>::const_iterator begin() const;
-    std::list<PBXValue*>::const_iterator end()   const;
+    PBXValueList::const_iterator begin() const;
+    PBXValueList::const_iterator end()   const;
 };
 
 class PBXCommentStatement : public PBXStatement {
     std::string mComment;
 public:
-    PBXCommentStatement(std::string comment);
+    PBXCommentStatement(const std::string& comment);
     std::string comment() const;
 };
 
@@ -97,15 +100,22 @@ public:
     
     std::string key() const;
     std::string keyComment() const;
+    bool        hasKeyComment() const;
     void        setKeyComment(const std::string& keyComment);
     const PBXValue* value() const;
 };
 
-class PBXDocument : public PBXBlock {
+class PBXDocument {
     std::string mPreamble;
+    PBXBlock*   mBlock;
 public:
-    PBXDocument(std::string preamble);
+    PBXDocument(const std::string& preamble,  PBXBlock* block);
+    virtual ~PBXDocument();
+    const std::string& preamble() const;
+    const PBXBlock* block() const;
 };
+
+extern "C" bool loadDocument(const char* filePath, PBXDocument **pDoc);
 
 
 #endif

@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8D4CE513E535DF0065C10F /* parserdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE8D4CE413E535DF0065C10F /* parserdef.cpp */; };
 		CEC9D70B13E2EB67008E074B /* libxcodeutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9D70713E2EB50008E074B /* libxcodeutils.a */; };
-		CEC9D70D13E2EBC9008E074B /* xcodeutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEC9D70C13E2EBC9008E074B /* xcodeutils.cpp */; };
-		CEC9D70F13E2EBD7008E074B /* xcodeutils.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC9D70E13E2EBD7008E074B /* xcodeutils.h */; };
 		CEC9D71D13E2EF37008E074B /* xcdump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEC9D71B13E2EF37008E074B /* xcdump.cpp */; };
 		CEC9D72013E2F5B8008E074B /* xcodeproj.l in Sources */ = {isa = PBXBuildFile; fileRef = CEC9D71F13E2F5B8008E074B /* xcodeproj.l */; };
 		CEC9D72213E2F5ED008E074B /* xcodeproj.y in Sources */ = {isa = PBXBuildFile; fileRef = CEC9D72113E2F5ED008E074B /* xcodeproj.y */; };
@@ -56,10 +55,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE8D4CE413E535DF0065C10F /* parserdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parserdef.cpp; sourceTree = "<group>"; };
 		CEC9D6F013E2EA0B008E074B /* xcdump */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xcdump; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC9D70713E2EB50008E074B /* libxcodeutils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxcodeutils.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC9D70C13E2EBC9008E074B /* xcodeutils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xcodeutils.cpp; sourceTree = "<group>"; };
-		CEC9D70E13E2EBD7008E074B /* xcodeutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcodeutils.h; sourceTree = "<group>"; };
 		CEC9D71B13E2EF37008E074B /* xcdump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xcdump.cpp; path = xcdump/xcdump.cpp; sourceTree = SOURCE_ROOT; };
 		CEC9D71C13E2EF37008E074B /* xcdump.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; name = xcdump.1; path = xcdump/xcdump.1; sourceTree = SOURCE_ROOT; };
 		CEC9D71F13E2F5B8008E074B /* xcodeproj.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = xcodeproj.l; sourceTree = "<group>"; };
@@ -120,11 +118,10 @@
 		CEC9D70213E2EA49008E074B /* libxcodeutils */ = {
 			isa = PBXGroup;
 			children = (
-				CEC9D70E13E2EBD7008E074B /* xcodeutils.h */,
-				CEC9D70C13E2EBC9008E074B /* xcodeutils.cpp */,
 				CEC9D71F13E2F5B8008E074B /* xcodeproj.l */,
 				CEC9D72113E2F5ED008E074B /* xcodeproj.y */,
 				CEC9D72413E301A6008E074B /* parserdef.h */,
+				CE8D4CE413E535DF0065C10F /* parserdef.cpp */,
 			);
 			name = libxcodeutils;
 			sourceTree = "<group>";
@@ -145,7 +142,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC9D70F13E2EBD7008E074B /* xcodeutils.h in Headers */,
 				CEC9D72513E301A6008E074B /* parserdef.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,7 +226,7 @@
 			files = (
 				CEC9D72013E2F5B8008E074B /* xcodeproj.l in Sources */,
 				CEC9D72213E2F5ED008E074B /* xcodeproj.y in Sources */,
-				CEC9D70D13E2EBC9008E074B /* xcodeutils.cpp in Sources */,
+				CE8D4CE513E535DF0065C10F /* parserdef.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
