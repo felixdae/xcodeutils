@@ -1,0 +1,7 @@
+build/
+lex.yy.c
+*.pbxuser
+*.perspectivev3
+*.xcuserdatad
+*.xcworkspacedata
+.DS_Store
