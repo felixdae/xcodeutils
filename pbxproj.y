@@ -50,7 +50,7 @@ extern "C"
 
         //init
         *pDoc = NULL;
-        gpDoc = NULL;
+        gpDoc = new PBXFile;
         sFailed = false;
         
         //parse
@@ -96,7 +96,6 @@ extern "C"
 
 %token COMMA LBRACKET RBRACKET OBRACE EBRACE SEMICOLON QUOTE ASSIGN
 
-%type <string>      variable
 %type <document>    document
 %type <block>       block
 %type <array>       array
@@ -111,8 +110,9 @@ extern "C"
 
 document    :   PREAMBLE block
                 {
-                    $$ = new PBXFile($1, $2);
-                    gpDoc = $$;
+                    gpDoc->setPreamble($1);
+                    gpDoc->setBlock($2);
+                    $$ = gpDoc;
                 }
                 ;
 
@@ -134,25 +134,51 @@ statements  :   /* Empty */
                 }
                 ;
 
-statement   :   variable         ASSIGN value         SEMICOLON
+statement   :   WORD         ASSIGN value         SEMICOLON
                 {
                     $$ = new PBXAssignment($1, $3);
                 }
                 ;
-              | variable COMMENT ASSIGN value         SEMICOLON
+              | WORD COMMENT ASSIGN value         SEMICOLON
                 {
                     PBXAssignment *assign = new PBXAssignment($1, $4);
                     assign->setKeyComment($2);
                     $$ = assign;
                 }
                 ;              
-              | variable         ASSIGN value COMMENT SEMICOLON
+              | WORD         ASSIGN value COMMENT SEMICOLON
                 {
                     $3->setComment($4);
                     $$ = new PBXAssignment($1, $3);
                 }
                 ;              
-              | variable COMMENT ASSIGN value COMMENT SEMICOLON  
+              | WORD COMMENT ASSIGN value COMMENT SEMICOLON  
+                {
+                    $4->setComment($5);
+                    PBXAssignment *assign = new PBXAssignment($1, $4);
+                    assign->setKeyComment($2);
+                    $$ = assign;
+                }
+                ;
+              | ID         ASSIGN value         SEMICOLON
+                {
+                    $$ = new PBXAssignment($1, $3);
+                }
+                ;
+              | ID COMMENT ASSIGN value         SEMICOLON
+                {
+                    PBXAssignment *assign = new PBXAssignment($1, $4);
+                    assign->setKeyComment($2);
+                    $$ = assign;
+                }
+                ;              
+              | ID         ASSIGN value COMMENT SEMICOLON
+                {
+                    $3->setComment($4);
+                    $$ = new PBXAssignment($1, $3);
+                }
+                ;              
+              | ID COMMENT ASSIGN value COMMENT SEMICOLON  
                 {
                     $4->setComment($5);
                     PBXAssignment *assign = new PBXAssignment($1, $4);
@@ -165,18 +191,6 @@ statement   :   variable         ASSIGN value         SEMICOLON
                     $$ = new PBXCommentItem($1);
                 }
                 ;
-                
-variable    :   ID
-                {
-                    $$ = $1;
-                }
-                ;
-              | WORD
-                {
-                    $$ = $1;
-                }
-                ;               
-                
                 
 value       :   ID
                 {

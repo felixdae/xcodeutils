@@ -36,7 +36,7 @@ void PBXBlock::addStatement(PBXItem* statement)
         mValueMap.insert(valuePair);
     }
 }
-const PBXValue* PBXBlock::valueForKey(const std::string& name) const
+const PBXValue* PBXBlock::valueForKey(const char* name) const
 {
     PBXValueMap::const_iterator itor = mValueMap.find(name);
     if (itor != mValueMap.end()) {
@@ -67,33 +67,33 @@ bool PBXValue::hasComment() const
 {
     return !mComment.empty();
 }
-std::string PBXValue::comment() const
+const char* PBXValue::comment() const
 {
-    return mComment;
+    return mComment.c_str();
 }
-void PBXValue::setComment(const std::string& newComment)
+void PBXValue::setComment(const char* newComment)
 {
     mComment = newComment;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-PBXValueRef::PBXValueRef(const std::string& id)
+PBXValueRef::PBXValueRef(const char* id)
 {
     mId = id;
 }
-std::string PBXValueRef::id() const
+const char* PBXValueRef::id() const
 {   
-    return mId;
+    return mId.c_str();
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-PBXText::PBXText(const std::string& text)
+PBXText::PBXText(const char* text)
 {
     mText = text;
 }
-std::string PBXText::text() const
+const char* PBXText::text() const
 {
-    return mText;
+    return mText.c_str();
 }
 
 
@@ -117,7 +117,7 @@ PBXItem::~PBXItem()
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-PBXAssignment::PBXAssignment(std::string key, PBXValue* value)
+PBXAssignment::PBXAssignment(const char* key, PBXValue* value)
 {
     mKey = key;
     mValue = value;
@@ -128,17 +128,17 @@ PBXAssignment::~PBXAssignment()
     delete mValue;
 }
 
-std::string PBXAssignment::key() const
+const char* PBXAssignment::key() const
 {
-    return mKey;
+    return mKey.c_str();
 }
 
-std::string PBXAssignment::keyComment() const
+const char* PBXAssignment::keyComment() const
 {
-    return mKeyComment;
+    return mKeyComment.c_str();
 }
 
-void PBXAssignment::setKeyComment(const std::string& keyComment)
+void PBXAssignment::setKeyComment(const char* keyComment)
 {
     mKeyComment = keyComment;
 }
@@ -190,24 +190,50 @@ std::string PBXCommentItem::comment() const
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-PBXFile::PBXFile(const std::string& preamble, PBXBlock* block)
+PBXFile::PBXFile()
 {
-    mPreamble = preamble;
-    mBlock    = block;
+    mBlock = NULL;
 }
-
 PBXFile::~PBXFile()
 {
     delete mBlock;
 }
 
-const std::string& PBXFile::preamble() const
+const char* PBXFile::preamble() const
 {
-    return mPreamble;
+    return mPreamble.c_str();
 }
 
+void PBXFile::setPreamble(const char* preamble)
+{
+    mPreamble = preamble;
+}
 
 const PBXBlock* PBXFile::block() const
 {
     return mBlock;
 }
+
+void PBXFile::setBlock(PBXBlock* block)
+{
+    mBlock = block;
+}
+
+
+const PBXValue* PBXFile::valueForKey(const char* keyName) const
+{
+    return mBlock ? mBlock->valueForKey(keyName) : NULL;
+}
+
+const PBXValue* PBXFile::deref(const PBXValueRef* ref) const
+{
+    if (!ref) return NULL;
+    
+    const PBXBlock* objects = dynamic_cast<const PBXBlock*>(valueForKey("objects"));
+    return objects ? objects->valueForKey(ref->id()) : NULL;
+}
+
+
+
+
+

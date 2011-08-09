@@ -168,7 +168,7 @@ void dumpValue(const PBXValue* pValue)
     }
     
     if (pValue->hasComment()) {
-      std::cout << " " + pValue->comment();
+      std::cout << " " << pValue->comment();
     }
 }
 

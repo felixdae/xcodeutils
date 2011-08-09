@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CE8D4CE513E535DF0065C10F /* pbxprojdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE8D4CE413E535DF0065C10F /* pbxprojdef.cpp */; };
-		CE96C21B13E6EF4600DBBFFA /* xcodeproj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE96C21A13E6EF4600DBBFFA /* xcodeproj.cpp */; };
-		CE96C21D13E6EF5100DBBFFA /* xcodeproj.h in Headers */ = {isa = PBXBuildFile; fileRef = CE96C21C13E6EF5100DBBFFA /* xcodeproj.h */; };
+		CEA815BF13E95FE7004F8A6E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEA815BE13E95FE7004F8A6E /* main.cpp */; };
+		CEA815C113E95FE7004F8A6E /* xcdep.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEA815C013E95FE7004F8A6E /* xcdep.1 */; };
+		CEA815C613E96021004F8A6E /* libxcodeutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9D70713E2EB50008E074B /* libxcodeutils.a */; };
 		CEC9D70B13E2EB67008E074B /* libxcodeutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9D70713E2EB50008E074B /* libxcodeutils.a */; };
 		CEC9D71D13E2EF37008E074B /* xcdump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEC9D71B13E2EF37008E074B /* xcdump.cpp */; };
 		CEC9D72013E2F5B8008E074B /* pbxproj.l in Sources */ = {isa = PBXBuildFile; fileRef = CEC9D71F13E2F5B8008E074B /* pbxproj.l */; };
@@ -33,7 +34,34 @@
 		};
 /* End PBXBuildRule section */
 
+/* Begin PBXContainerItemProxy section */
+		CEA815C713E96028004F8A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC9D6E713E2EA0B008E074B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC9D70613E2EB50008E074B;
+			remoteInfo = xcodeutils;
+		};
+		CEA815C913E96129004F8A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC9D6E713E2EA0B008E074B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC9D70613E2EB50008E074B;
+			remoteInfo = xcodeutils;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		CEA815B913E95FE7004F8A6E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				CEA815C113E95FE7004F8A6E /* xcdep.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CEC9D6EE13E2EA0B008E074B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
@@ -58,8 +86,9 @@
 
 /* Begin PBXFileReference section */
 		CE8D4CE413E535DF0065C10F /* pbxprojdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pbxprojdef.cpp; sourceTree = "<group>"; };
-		CE96C21A13E6EF4600DBBFFA /* xcodeproj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xcodeproj.cpp; sourceTree = "<group>"; };
-		CE96C21C13E6EF5100DBBFFA /* xcodeproj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xcodeproj.h; sourceTree = "<group>"; };
+		CEA815BB13E95FE7004F8A6E /* xcdep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xcdep; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA815BE13E95FE7004F8A6E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CEA815C013E95FE7004F8A6E /* xcdep.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = xcdep.1; sourceTree = "<group>"; };
 		CEC9D6F013E2EA0B008E074B /* xcdump */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xcdump; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC9D70713E2EB50008E074B /* libxcodeutils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxcodeutils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC9D71B13E2EF37008E074B /* xcdump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xcdump.cpp; path = xcdump/xcdump.cpp; sourceTree = SOURCE_ROOT; };
@@ -72,6 +101,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CEA815B813E95FE7004F8A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA815C613E96021004F8A6E /* libxcodeutils.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEC9D6ED13E2EA0B008E074B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,12 +127,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEA815BD13E95FE7004F8A6E /* xcdep */ = {
+			isa = PBXGroup;
+			children = (
+				CEA815BE13E95FE7004F8A6E /* main.cpp */,
+				CEA815C013E95FE7004F8A6E /* xcdep.1 */,
+			);
+			path = xcdep;
+			sourceTree = "<group>";
+		};
 		CEC9D6E513E2EA0B008E074B = {
 			isa = PBXGroup;
 			children = (
 				CEDFE7CC13E421E5008FB42F /* tests */,
 				CEC9D70213E2EA49008E074B /* libxcodeutils */,
 				CEC9D6F313E2EA0B008E074B /* xcdump */,
+				CEA815BD13E95FE7004F8A6E /* xcdep */,
 				CEC9D6F113E2EA0B008E074B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +152,7 @@
 			children = (
 				CEC9D6F013E2EA0B008E074B /* xcdump */,
 				CEC9D70713E2EB50008E074B /* libxcodeutils.a */,
+				CEA815BB13E95FE7004F8A6E /* xcdep */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,8 +174,6 @@
 				CEC9D72113E2F5ED008E074B /* pbxproj.y */,
 				CEC9D72413E301A6008E074B /* pbxprojdef.h */,
 				CE8D4CE413E535DF0065C10F /* pbxprojdef.cpp */,
-				CE96C21C13E6EF5100DBBFFA /* xcodeproj.h */,
-				CE96C21A13E6EF4600DBBFFA /* xcodeproj.cpp */,
 			);
 			name = libxcodeutils;
 			sourceTree = "<group>";
@@ -149,13 +195,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC9D72513E301A6008E074B /* pbxprojdef.h in Headers */,
-				CE96C21D13E6EF5100DBBFFA /* xcodeproj.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CEA815BA13E95FE7004F8A6E /* xcdep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA815C213E95FE7004F8A6E /* Build configuration list for PBXNativeTarget "xcdep" */;
+			buildPhases = (
+				CEA815B713E95FE7004F8A6E /* Sources */,
+				CEA815B813E95FE7004F8A6E /* Frameworks */,
+				CEA815B913E95FE7004F8A6E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA815C813E96028004F8A6E /* PBXTargetDependency */,
+			);
+			name = xcdep;
+			productName = xcdep;
+			productReference = CEA815BB13E95FE7004F8A6E /* xcdep */;
+			productType = "com.apple.product-type.tool";
+		};
 		CEC9D6EF13E2EA0B008E074B /* xcdump */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC9D6FA13E2EA0B008E074B /* Build configuration list for PBXNativeTarget "xcdump" */;
@@ -168,6 +231,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CEA815CA13E96129004F8A6E /* PBXTargetDependency */,
 			);
 			name = xcdump;
 			productName = xcodeutils;
@@ -214,11 +278,20 @@
 			targets = (
 				CEC9D70613E2EB50008E074B /* xcodeutils */,
 				CEC9D6EF13E2EA0B008E074B /* xcdump */,
+				CEA815BA13E95FE7004F8A6E /* xcdep */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CEA815B713E95FE7004F8A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA815BF13E95FE7004F8A6E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEC9D6EC13E2EA0B008E074B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,13 +307,39 @@
 				CEC9D72013E2F5B8008E074B /* pbxproj.l in Sources */,
 				CEC9D72213E2F5ED008E074B /* pbxproj.y in Sources */,
 				CE8D4CE513E535DF0065C10F /* pbxprojdef.cpp in Sources */,
-				CE96C21B13E6EF4600DBBFFA /* xcodeproj.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CEA815C813E96028004F8A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC9D70613E2EB50008E074B /* xcodeutils */;
+			targetProxy = CEA815C713E96028004F8A6E /* PBXContainerItemProxy */;
+		};
+		CEA815CA13E96129004F8A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC9D70613E2EB50008E074B /* xcodeutils */;
+			targetProxy = CEA815C913E96129004F8A6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CEA815C313E95FE7004F8A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEA815C413E95FE7004F8A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CEC9D6F813E2EA0B008E074B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +418,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CEA815C213E95FE7004F8A6E /* Build configuration list for PBXNativeTarget "xcdep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA815C313E95FE7004F8A6E /* Debug */,
+				CEA815C413E95FE7004F8A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CEC9D6EA13E2EA0B008E074B /* Build configuration list for PBXProject "xcodeutils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

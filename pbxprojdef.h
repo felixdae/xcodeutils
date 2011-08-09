@@ -30,8 +30,8 @@ protected:
 public:
     virtual ~PBXValue();
     bool hasComment() const;
-    std::string comment() const;
-    void setComment(const std::string& newComment);
+    const char* comment() const;
+    void setComment(const char* newComment);
 };
 
 typedef std::list<PBXValue*> PBXValueList;
@@ -39,15 +39,15 @@ typedef std::list<PBXValue*> PBXValueList;
 class PBXValueRef : public PBXValue {
     std::string mId;
 public:
-    PBXValueRef(const std::string& id);
-    std::string id() const;
+    PBXValueRef(const char* id);
+    const char* id() const;
 };
 
 class PBXText : public PBXValue {
     std::string mText;
 public:
-    PBXText(const std::string& text);
-    std::string text() const;
+    PBXText(const char* text);
+    const char* text() const;
 };
 
 class PBXInteger : public PBXValue {
@@ -60,14 +60,17 @@ public:
 
 class PBXBlock : public PBXValue {
     typedef std::map<const std::string, const PBXValue*> PBXValueMap;
-    PBXValueMap       mValueMap;
+    PBXValueMap  mValueMap;
     PBXItemList  mStatements;
     PBXBlock(const PBXItemList& other);
 public:
+    typedef PBXItemList::const_iterator    const_iterator;
+    typedef PBXItemList::iterator          iterator;
+    
     PBXBlock();
     virtual ~PBXBlock();
     void addStatement(PBXItem* statement);    
-    const PBXValue* valueForKey(const std::string& name) const;
+    const PBXValue* valueForKey(const char* name) const;
     
     PBXItemList::const_iterator begin() const;
     PBXItemList::const_iterator end()   const;
@@ -76,12 +79,15 @@ public:
 class PBXArray : public PBXValue {
     PBXValueList mValues;
 public:
+    typedef PBXValueList::const_iterator    const_iterator;
+    typedef PBXValueList::iterator          iterator;
+    
     PBXArray();
     virtual ~PBXArray();
     void addValue(PBXValue* value);
     
-    PBXValueList::const_iterator begin() const;
-    PBXValueList::const_iterator end()   const;
+    const_iterator begin() const;
+    const_iterator end()   const;
 };
 
 class PBXCommentItem : public PBXItem {
@@ -96,24 +102,30 @@ class PBXAssignment : public PBXItem {
     std::string mKeyComment;
     PBXValue*   mValue;
 public:
-    PBXAssignment(std::string key, PBXValue* value);
+    PBXAssignment(const char* key, PBXValue* value);
     virtual ~PBXAssignment();
     
-    std::string key() const;
-    std::string keyComment() const;
+    const char* key() const;
+    const char* keyComment() const;
     bool        hasKeyComment() const;
-    void        setKeyComment(const std::string& keyComment);
+    void        setKeyComment(const char* keyComment);
     const PBXValue* value() const;
 };
 
 class PBXFile {
     std::string mPreamble;
     PBXBlock*   mBlock;
+    typedef std::map<const std::string, const PBXValue*> PBXValueMap;
 public:
-    PBXFile(const std::string& preamble,  PBXBlock* block);
+    PBXFile();
     virtual ~PBXFile();
-    const std::string& preamble() const;
+    const char* preamble() const;
+    void setPreamble(const char* preamble);
     const PBXBlock* block() const;
+    void setBlock(PBXBlock* block);
+    
+    const PBXValue* valueForKey(const char* keyName) const;
+    const PBXValue* deref(const PBXValueRef* ref) const;
 };
 
 extern "C" bool loadDocument(const char* filePath, PBXFile **pDoc);
