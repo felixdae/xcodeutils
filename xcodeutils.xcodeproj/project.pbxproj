@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE110DE913F49BED006D19D1 /* xcdep in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEA815BB13E95FE7004F8A6E /* xcdep */; };
+		CE43954B13F41047007C9DDA /* AcOCUiControls.pbxproj in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE43954A13F41006007C9DDA /* AcOCUiControls.pbxproj */; };
 		CE8D4CE513E535DF0065C10F /* pbxprojdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE8D4CE413E535DF0065C10F /* pbxprojdef.cpp */; };
 		CEA815BF13E95FE7004F8A6E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEA815BE13E95FE7004F8A6E /* main.cpp */; };
 		CEA815C113E95FE7004F8A6E /* xcdep.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEA815C013E95FE7004F8A6E /* xcdep.1 */; };
@@ -52,6 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CE110DE813F49BDC006D19D1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/bin";
+			dstSubfolderSpec = 0;
+			files = (
+				CE110DE913F49BED006D19D1 /* xcdep in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEA815B913E95FE7004F8A6E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,6 +89,7 @@
 			dstPath = tests;
 			dstSubfolderSpec = 16;
 			files = (
+				CE43954B13F41047007C9DDA /* AcOCUiControls.pbxproj in CopyFiles */,
 				CEDFE7D313E42247008FB42F /* case1.pbxproj in CopyFiles */,
 				CEDFE7D413E42247008FB42F /* project.pbxproj in CopyFiles */,
 			);
@@ -85,6 +98,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE43954A13F41006007C9DDA /* AcOCUiControls.pbxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.pbxproject; path = AcOCUiControls.pbxproj; sourceTree = "<group>"; };
 		CE8D4CE413E535DF0065C10F /* pbxprojdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pbxprojdef.cpp; sourceTree = "<group>"; };
 		CEA815BB13E95FE7004F8A6E /* xcdep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xcdep; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA815BE13E95FE7004F8A6E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -164,7 +178,6 @@
 				CEC9D71C13E2EF37008E074B /* xcdump.1 */,
 			);
 			name = xcdump;
-			path = xcodeutils;
 			sourceTree = "<group>";
 		};
 		CEC9D70213E2EA49008E074B /* libxcodeutils */ = {
@@ -181,6 +194,7 @@
 		CEDFE7CC13E421E5008FB42F /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				CE43954A13F41006007C9DDA /* AcOCUiControls.pbxproj */,
 				CEDFE7CD13E421E5008FB42F /* case1.pbxproj */,
 				CEDFE7CE13E421E5008FB42F /* project.pbxproj */,
 			);
@@ -208,6 +222,7 @@
 				CEA815B713E95FE7004F8A6E /* Sources */,
 				CEA815B813E95FE7004F8A6E /* Frameworks */,
 				CEA815B913E95FE7004F8A6E /* CopyFiles */,
+				CE110DE813F49BDC006D19D1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -425,6 +440,7 @@
 				CEA815C413E95FE7004F8A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEC9D6EA13E2EA0B008E074B /* Build configuration list for PBXProject "xcodeutils" */ = {
 			isa = XCConfigurationList;

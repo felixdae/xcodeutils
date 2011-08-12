@@ -1,0 +1,1831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		53DF6901067E5B8E0090B5B0 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C056398708A954F8003078D8 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				53DF6903067E5B930090B5B0 /* PBXTargetDependency */,
+				53DF6905067E5B930090B5B0 /* PBXTargetDependency */,
+				B98E6AF512AE2A1200004602 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		13F8B89007B43554008AE28D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		26C18BC3132E27CD00353DBB /* AcOCUiPopupButtonItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26C40CBF132E26A000AF84AB /* AcOCUiPopupButtonItem.mm */; };
+		2BDF701A133893DD00EB63AD /* TestTreeNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF7019133893DD00EB63AD /* TestTreeNode.mm */; };
+		2BDF73B11339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BDF73AF1339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.h */; };
+		2BDF73B21339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF73B01339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.mm */; };
+		3D03F21512AEDF5D00407022 /* AcOCUiControls_Utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D03F20812AEDCB800407022 /* AcOCUiControls_Utils.mm */; };
+		546DEAF3067F632A0098DCC4 /* AcOCUiControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* AcOCUiControls.framework */; };
+		54D33B2906778E3300C9C163 /* AcOCUiControlsView.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = 54D33B2806778E3300C9C163 /* AcOCUiControlsView.classdescription */; };
+		84254B5913723DEF00E0D322 /* RuleEditor_Add_Compound.png in Resources */ = {isa = PBXBuildFile; fileRef = 84254B5613723DEF00E0D322 /* RuleEditor_Add_Compound.png */; };
+		84254B5A13723DEF00E0D322 /* RuleEditor_Add_Simple.png in Resources */ = {isa = PBXBuildFile; fileRef = 84254B5713723DEF00E0D322 /* RuleEditor_Add_Simple.png */; };
+		84254B5B13723DEF00E0D322 /* RuleEditor_Remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 84254B5813723DEF00E0D322 /* RuleEditor_Remove.png */; };
+		8D1AC96C0486D14A00FE50C9 /* AcOCUiControlsInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C577FE90428111CA0C5A /* AcOCUiControlsInspector.m */; settings = {ATTRIBUTES = (); }; };
+		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */; };
+		B90109D9130BDE16007FC1CC /* scroll_down_triangle_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109D5130BDE16007FC1CC /* scroll_down_triangle_hover.png */; };
+		B90109DA130BDE16007FC1CC /* scroll_left_triangle_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109D6130BDE16007FC1CC /* scroll_left_triangle_hover.png */; };
+		B90109DB130BDE16007FC1CC /* scroll_right_triangle_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109D7130BDE16007FC1CC /* scroll_right_triangle_hover.png */; };
+		B90109DC130BDE16007FC1CC /* scroll_up_triangle_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109D8130BDE16007FC1CC /* scroll_up_triangle_hover.png */; };
+		B90109F9130BDE2E007FC1CC /* Dark_Checkbox_Mixed_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109DE130BDE2E007FC1CC /* Dark_Checkbox_Mixed_Hover.png */; };
+		B90109FA130BDE2E007FC1CC /* Dark_Checkbox_Mixed.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109DF130BDE2E007FC1CC /* Dark_Checkbox_Mixed.png */; };
+		B90109FB130BDE2E007FC1CC /* Dark_Checkbox_Off_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E0130BDE2E007FC1CC /* Dark_Checkbox_Off_Hover.png */; };
+		B90109FC130BDE2E007FC1CC /* Dark_Checkbox_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E1130BDE2E007FC1CC /* Dark_Checkbox_Off.png */; };
+		B90109FD130BDE2E007FC1CC /* Dark_Checkbox_On_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E2130BDE2E007FC1CC /* Dark_Checkbox_On_Hover.png */; };
+		B90109FE130BDE2E007FC1CC /* Dark_Checkbox_On.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E3130BDE2E007FC1CC /* Dark_Checkbox_On.png */; };
+		B90109FF130BDE2E007FC1CC /* Dark_collapse_down_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E4130BDE2E007FC1CC /* Dark_collapse_down_hover.png */; };
+		B9010A00130BDE2E007FC1CC /* Dark_collapse_down_idle.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E5130BDE2E007FC1CC /* Dark_collapse_down_idle.png */; };
+		B9010A01130BDE2E007FC1CC /* Dark_collapse_up_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E6130BDE2E007FC1CC /* Dark_collapse_up_hover.png */; };
+		B9010A02130BDE2E007FC1CC /* Dark_collapse_up_idle.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E7130BDE2E007FC1CC /* Dark_collapse_up_idle.png */; };
+		B9010A03130BDE2E007FC1CC /* Dark_lock_closed_hover_12.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E8130BDE2E007FC1CC /* Dark_lock_closed_hover_12.png */; };
+		B9010A04130BDE2E007FC1CC /* Dark_lock_closed_idle_12.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109E9130BDE2E007FC1CC /* Dark_lock_closed_idle_12.png */; };
+		B9010A05130BDE2E007FC1CC /* Dark_lock_open_hover_12.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109EA130BDE2E007FC1CC /* Dark_lock_open_hover_12.png */; };
+		B9010A06130BDE2E007FC1CC /* Dark_lock_open_idle_12.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109EB130BDE2E007FC1CC /* Dark_lock_open_idle_12.png */; };
+		B9010A07130BDE2E007FC1CC /* Dark_Menu_Check.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109EC130BDE2E007FC1CC /* Dark_Menu_Check.png */; };
+		B9010A08130BDE2E007FC1CC /* Dark_Radio_Mixed_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109ED130BDE2E007FC1CC /* Dark_Radio_Mixed_Hover.png */; };
+		B9010A09130BDE2E007FC1CC /* Dark_Radio_Mixed.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109EE130BDE2E007FC1CC /* Dark_Radio_Mixed.png */; };
+		B9010A0A130BDE2E007FC1CC /* Dark_Radio_Off_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109EF130BDE2E007FC1CC /* Dark_Radio_Off_Hover.png */; };
+		B9010A0B130BDE2E007FC1CC /* Dark_Radio_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109F0130BDE2E007FC1CC /* Dark_Radio_Off.png */; };
+		B9010A0C130BDE2E007FC1CC /* Dark_Radio_On_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109F1130BDE2E007FC1CC /* Dark_Radio_On_Hover.png */; };
+		B9010A0D130BDE2E007FC1CC /* Dark_Radio_On.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109F2130BDE2E007FC1CC /* Dark_Radio_On.png */; };
+		B9010A0E130BDE2E007FC1CC /* Dark_scroll_down_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109F3130BDE2E007FC1CC /* Dark_scroll_down_triangle.png */; };
+		B9010A0F130BDE2E007FC1CC /* Dark_scroll_left_triangle_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109F4130BDE2E007FC1CC /* Dark_scroll_left_triangle_hover.png */; };
+		B9010A10130BDE2E007FC1CC /* Dark_scroll_left_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109F5130BDE2E007FC1CC /* Dark_scroll_left_triangle.png */; };
+		B9010A11130BDE2E007FC1CC /* Dark_scroll_right_triangle_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109F6130BDE2E007FC1CC /* Dark_scroll_right_triangle_hover.png */; };
+		B9010A12130BDE2E007FC1CC /* Dark_scroll_right_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109F7130BDE2E007FC1CC /* Dark_scroll_right_triangle.png */; };
+		B9010A13130BDE2E007FC1CC /* Dark_scroll_up_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B90109F8130BDE2E007FC1CC /* Dark_scroll_up_triangle.png */; };
+		B9010A2D130BDE39007FC1CC /* Light_Checkbox_Mixed_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A14130BDE39007FC1CC /* Light_Checkbox_Mixed_Hover.png */; };
+		B9010A2E130BDE39007FC1CC /* Light_Checkbox_Mixed.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A15130BDE39007FC1CC /* Light_Checkbox_Mixed.png */; };
+		B9010A2F130BDE39007FC1CC /* Light_Checkbox_Off_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A16130BDE39007FC1CC /* Light_Checkbox_Off_Hover.png */; };
+		B9010A30130BDE39007FC1CC /* Light_Checkbox_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A17130BDE39007FC1CC /* Light_Checkbox_Off.png */; };
+		B9010A31130BDE39007FC1CC /* Light_Checkbox_On_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A18130BDE39007FC1CC /* Light_Checkbox_On_Hover.png */; };
+		B9010A32130BDE39007FC1CC /* Light_Checkbox_On.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A19130BDE39007FC1CC /* Light_Checkbox_On.png */; };
+		B9010A33130BDE39007FC1CC /* Light_collapse_down_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A1A130BDE39007FC1CC /* Light_collapse_down_hover.png */; };
+		B9010A34130BDE39007FC1CC /* Light_collapse_down_idle.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A1B130BDE39007FC1CC /* Light_collapse_down_idle.png */; };
+		B9010A35130BDE39007FC1CC /* Light_collapse_up_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A1C130BDE39007FC1CC /* Light_collapse_up_hover.png */; };
+		B9010A36130BDE39007FC1CC /* Light_collapse_up_idle.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A1D130BDE39007FC1CC /* Light_collapse_up_idle.png */; };
+		B9010A37130BDE39007FC1CC /* Light_lock_closed_hover_12.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A1E130BDE39007FC1CC /* Light_lock_closed_hover_12.png */; };
+		B9010A38130BDE39007FC1CC /* Light_lock_closed_idle_12.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A1F130BDE39007FC1CC /* Light_lock_closed_idle_12.png */; };
+		B9010A39130BDE39007FC1CC /* Light_lock_open_hover_12.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A20130BDE39007FC1CC /* Light_lock_open_hover_12.png */; };
+		B9010A3A130BDE39007FC1CC /* Light_lock_open_idle_12.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A21130BDE39007FC1CC /* Light_lock_open_idle_12.png */; };
+		B9010A3B130BDE39007FC1CC /* Light_Menu_Check.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A22130BDE39007FC1CC /* Light_Menu_Check.png */; };
+		B9010A3C130BDE39007FC1CC /* Light_Radio_Off_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A23130BDE39007FC1CC /* Light_Radio_Off_Hover.png */; };
+		B9010A3D130BDE39007FC1CC /* Light_Radio_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A24130BDE39007FC1CC /* Light_Radio_Off.png */; };
+		B9010A3E130BDE39007FC1CC /* Light_Radio_On_Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A25130BDE39007FC1CC /* Light_Radio_On_Hover.png */; };
+		B9010A3F130BDE39007FC1CC /* Light_Radio_On.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A26130BDE39007FC1CC /* Light_Radio_On.png */; };
+		B9010A40130BDE39007FC1CC /* Light_scroll_down_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A27130BDE39007FC1CC /* Light_scroll_down_triangle.png */; };
+		B9010A41130BDE39007FC1CC /* Light_scroll_left_triangle_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A28130BDE39007FC1CC /* Light_scroll_left_triangle_hover.png */; };
+		B9010A42130BDE39007FC1CC /* Light_scroll_left_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A29130BDE39007FC1CC /* Light_scroll_left_triangle.png */; };
+		B9010A43130BDE39007FC1CC /* Light_scroll_right_triangle_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A2A130BDE39007FC1CC /* Light_scroll_right_triangle_hover.png */; };
+		B9010A44130BDE39007FC1CC /* Light_scroll_right_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A2B130BDE39007FC1CC /* Light_scroll_right_triangle.png */; };
+		B9010A45130BDE39007FC1CC /* Light_scroll_up_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B9010A2C130BDE39007FC1CC /* Light_scroll_up_triangle.png */; };
+		B90F6CCC12A8C9E90093F792 /* AcOCCanResignKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C6E12A8C9E90093F792 /* AcOCCanResignKeyWindow.h */; };
+		B90F6CCD12A8C9E90093F792 /* diagnostic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C6F12A8C9E90093F792 /* diagnostic.cpp */; };
+		B90F6CD212A8C9E90093F792 /* AcOCUiNSCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C7512A8C9E90093F792 /* AcOCUiNSCell.h */; };
+		B90F6CD312A8C9E90093F792 /* AcOCUiNSCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C7612A8C9E90093F792 /* AcOCUiNSCell.mm */; };
+		B90F6CD412A8C9E90093F792 /* AcOCUiBox.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C7712A8C9E90093F792 /* AcOCUiBox.h */; };
+		B90F6CD512A8C9E90093F792 /* AcOCUiBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C7812A8C9E90093F792 /* AcOCUiBox.mm */; };
+		B90F6CD612A8C9E90093F792 /* AcOCUiSliderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C7912A8C9E90093F792 /* AcOCUiSliderCell.h */; };
+		B90F6CD712A8C9E90093F792 /* AcOCUiSliderCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C7A12A8C9E90093F792 /* AcOCUiSliderCell.mm */; };
+		B90F6CD812A8C9E90093F792 /* AcOCUiTabBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C7B12A8C9E90093F792 /* AcOCUiTabBarView.h */; };
+		B90F6CD912A8C9E90093F792 /* AcOCUiTabBarView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C7C12A8C9E90093F792 /* AcOCUiTabBarView.mm */; };
+		B90F6CDA12A8C9E90093F792 /* AcOCUiMatrixCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C7D12A8C9E90093F792 /* AcOCUiMatrixCell.h */; };
+		B90F6CDB12A8C9E90093F792 /* AcOCUiMatrixCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C7E12A8C9E90093F792 /* AcOCUiMatrixCell.mm */; };
+		B90F6CDC12A8C9E90093F792 /* AcOCUiComplexCellLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C7F12A8C9E90093F792 /* AcOCUiComplexCellLayout.h */; };
+		B90F6CDD12A8C9E90093F792 /* AcOCUiComplexCellLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C8012A8C9E90093F792 /* AcOCUiComplexCellLayout.mm */; };
+		B90F6CDE12A8C9E90093F792 /* AcOCUiButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C8212A8C9E90093F792 /* AcOCUiButton.h */; };
+		B90F6CDF12A8C9E90093F792 /* AcOCUiButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C8312A8C9E90093F792 /* AcOCUiButton.mm */; };
+		B90F6CE012A8C9E90093F792 /* AcOCUiButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C8412A8C9E90093F792 /* AcOCUiButtonCell.h */; };
+		B90F6CE112A8C9E90093F792 /* AcOCUiButtonCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C8512A8C9E90093F792 /* AcOCUiButtonCell.mm */; };
+		B90F6CE212A8C9E90093F792 /* AcOCUiRolloverImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C8612A8C9E90093F792 /* AcOCUiRolloverImageButton.h */; };
+		B90F6CE312A8C9E90093F792 /* AcOCUiRolloverImageButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C8712A8C9E90093F792 /* AcOCUiRolloverImageButton.mm */; };
+		B90F6CE412A8C9E90093F792 /* AcOCUiLockButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C8812A8C9E90093F792 /* AcOCUiLockButton.h */; };
+		B90F6CE512A8C9E90093F792 /* AcOCUiLockButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C8912A8C9E90093F792 /* AcOCUiLockButton.mm */; };
+		B90F6CE612A8C9E90093F792 /* AcOCUiScrollButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C8A12A8C9E90093F792 /* AcOCUiScrollButton.h */; };
+		B90F6CE712A8C9E90093F792 /* AcOCUiScrollButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C8B12A8C9E90093F792 /* AcOCUiScrollButton.mm */; };
+		B90F6CE812A8C9E90093F792 /* AcOCUiDisclosureButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C8C12A8C9E90093F792 /* AcOCUiDisclosureButton.h */; };
+		B90F6CE912A8C9E90093F792 /* AcOCUiDisclosureButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C8D12A8C9E90093F792 /* AcOCUiDisclosureButton.mm */; };
+		B90F6CEA12A8C9E90093F792 /* AcOCUiSquareButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C8E12A8C9E90093F792 /* AcOCUiSquareButton.h */; };
+		B90F6CEB12A8C9E90093F792 /* AcOCUiSquareButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C8F12A8C9E90093F792 /* AcOCUiSquareButton.mm */; };
+		B90F6CEC12A8C9E90093F792 /* AcOCUiStepperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C9012A8C9E90093F792 /* AcOCUiStepperCell.h */; };
+		B90F6CED12A8C9E90093F792 /* AcOCUiStepperCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C9112A8C9E90093F792 /* AcOCUiStepperCell.mm */; };
+		B90F6CEE12A8C9E90093F792 /* AcOCUiTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C9312A8C9E90093F792 /* AcOCUiTextFieldCell.h */; };
+		B90F6CEF12A8C9E90093F792 /* AcOCUiTextFieldCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C9412A8C9E90093F792 /* AcOCUiTextFieldCell.mm */; };
+		B90F6CF012A8C9E90093F792 /* AcOCTextFieldEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C9512A8C9E90093F792 /* AcOCTextFieldEditor.h */; };
+		B90F6CF112A8C9E90093F792 /* AcOCUiTextFieldEditor.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C9612A8C9E90093F792 /* AcOCUiTextFieldEditor.mm */; };
+		B90F6CF212A8C9E90093F792 /* AcOCUiTextLabelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C9712A8C9E90093F792 /* AcOCUiTextLabelCell.h */; };
+		B90F6CF312A8C9E90093F792 /* AcOCUiTextLabelCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C9812A8C9E90093F792 /* AcOCUiTextLabelCell.mm */; };
+		B90F6CF412A8C9E90093F792 /* AcOCUiFlyoutButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C9A12A8C9E90093F792 /* AcOCUiFlyoutButton.h */; };
+		B90F6CF512A8C9E90093F792 /* AcOCUiFlyoutButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C9B12A8C9E90093F792 /* AcOCUiFlyoutButton.mm */; };
+		B90F6CF612A8C9E90093F792 /* AcOCUiMenuItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C9D12A8C9E90093F792 /* AcOCUiMenuItemCell.h */; };
+		B90F6CF712A8C9E90093F792 /* AcOCUiMenuItemCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6C9E12A8C9E90093F792 /* AcOCUiMenuItemCell.mm */; };
+		B90F6CF812A8C9E90093F792 /* AcOCUiMenuOverlayWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6C9F12A8C9E90093F792 /* AcOCUiMenuOverlayWindow.h */; };
+		B90F6CF912A8C9E90093F792 /* AcOCUiMenuOverlayWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CA012A8C9E90093F792 /* AcOCUiMenuOverlayWindow.mm */; };
+		B90F6CFA12A8C9E90093F792 /* AcOCUiFlyoutMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CA112A8C9E90093F792 /* AcOCUiFlyoutMenu.h */; };
+		B90F6CFB12A8C9E90093F792 /* AcOCUiFlyoutMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CA212A8C9E90093F792 /* AcOCUiFlyoutMenu.mm */; };
+		B90F6CFC12A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CA312A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.h */; };
+		B90F6CFD12A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CA412A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.mm */; };
+		B90F6CFE12A8C9E90093F792 /* AcOCUiFlyoutWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CA512A8C9E90093F792 /* AcOCUiFlyoutWindowController.h */; };
+		B90F6CFF12A8C9E90093F792 /* AcOCUiFlyoutWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CA612A8C9E90093F792 /* AcOCUiFlyoutWindowController.mm */; };
+		B90F6D0012A8C9E90093F792 /* AcOCUiFlyoutWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CA712A8C9E90093F792 /* AcOCUiFlyoutWindow.h */; };
+		B90F6D0112A8C9E90093F792 /* AcOCUiFlyoutWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CA812A8C9E90093F792 /* AcOCUiFlyoutWindow.mm */; };
+		B90F6D0212A8C9E90093F792 /* AcOCUiBinder.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CAA12A8C9E90093F792 /* AcOCUiBinder.h */; };
+		B90F6D0312A8C9E90093F792 /* AcOCUiBinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CAB12A8C9E90093F792 /* AcOCUiBinder.mm */; };
+		B90F6D0412A8C9E90093F792 /* AcOCUiPopupButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CAC12A8C9E90093F792 /* AcOCUiPopupButton.h */; };
+		B90F6D0512A8C9E90093F792 /* AcOCUiPopupButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CAD12A8C9E90093F792 /* AcOCUiPopupButton.mm */; };
+		B90F6D0612A8C9E90093F792 /* AcOCUiSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CAF12A8C9E90093F792 /* AcOCUiSegmentedControl.h */; };
+		B90F6D0712A8C9E90093F792 /* AcOCUiSegmentedControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CB012A8C9E90093F792 /* AcOCUiSegmentedControl.mm */; };
+		B90F6D0812A8C9E90093F792 /* AcOCUiSegmentedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CB112A8C9E90093F792 /* AcOCUiSegmentedCell.h */; };
+		B90F6D0912A8C9E90093F792 /* AcOCUiSegmentedCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CB212A8C9E90093F792 /* AcOCUiSegmentedCell.mm */; };
+		B90F6D0A12A8C9E90093F792 /* AcOCUiTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CB412A8C9E90093F792 /* AcOCUiTableView.h */; };
+		B90F6D0B12A8C9E90093F792 /* AcOCUiTableView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CB512A8C9E90093F792 /* AcOCUiTableView.mm */; };
+		B90F6D0C12A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CB712A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.h */; };
+		B90F6D0D12A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CB812A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.mm */; };
+		B90F6D0E12A8C9E90093F792 /* AcOCUiSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CB912A8C9E90093F792 /* AcOCUiSeparator.h */; };
+		B90F6D0F12A8C9E90093F792 /* AcOCUiSeparator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CBA12A8C9E90093F792 /* AcOCUiSeparator.mm */; };
+		B90F6D1012A8C9E90093F792 /* AcOCUiPaletteSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CBB12A8C9E90093F792 /* AcOCUiPaletteSeparator.h */; };
+		B90F6D1112A8C9E90093F792 /* AcOCUiPaletteSeparator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CBC12A8C9E90093F792 /* AcOCUiPaletteSeparator.mm */; };
+		B90F6D1212A8C9E90093F792 /* AcOCUiOverlayPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CBE12A8C9E90093F792 /* AcOCUiOverlayPanel.h */; };
+		B90F6D1312A8C9E90093F792 /* AcOCUiOverlayPanel.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CBF12A8C9E90093F792 /* AcOCUiOverlayPanel.mm */; };
+		B90F6D1412A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CC012A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.h */; };
+		B90F6D1512A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CC112A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.mm */; };
+		B90F6D1612A8C9E90093F792 /* AcOCUiTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CC312A8C9E90093F792 /* AcOCUiTheme.h */; };
+		B90F6D1712A8C9E90093F792 /* AcOCUiTheme.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CC412A8C9E90093F792 /* AcOCUiTheme.mm */; };
+		B90F6D1812A8C9E90093F792 /* AcOCStylizer.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CC512A8C9E90093F792 /* AcOCStylizer.h */; };
+		B90F6D1912A8C9E90093F792 /* AcOCStylizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CC612A8C9E90093F792 /* AcOCStylizer.mm */; };
+		B90F6D1A12A8C9E90093F792 /* AcControlProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CC712A8C9E90093F792 /* AcControlProvider.h */; };
+		B90F6D1B12A8C9E90093F792 /* AcControlStylizer.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CC812A8C9E90093F792 /* AcControlStylizer.h */; };
+		B90F6D1C12A8C9E90093F792 /* AcControlStylizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CC912A8C9E90093F792 /* AcControlStylizer.mm */; };
+		B90F6D1D12A8C9E90093F792 /* AcOCUiTextAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F6CCA12A8C9E90093F792 /* AcOCUiTextAttributes.h */; };
+		B90F6D1E12A8C9E90093F792 /* AcOCUiTextAttributes.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6CCB12A8C9E90093F792 /* AcOCUiTextAttributes.mm */; };
+		B90F6D2E12A8CA210093F792 /* NSString+AcOCStringUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6D2B12A8CA210093F792 /* NSString+AcOCStringUtils.mm */; };
+		B90F6D2F12A8CA210093F792 /* NSImage+AcOCUiAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = B90F6D2C12A8CA210093F792 /* NSImage+AcOCUiAdditions.mm */; };
+		B93744D01337078A00139912 /* AcOCUiComplexTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B93744C31337078A00139912 /* AcOCUiComplexTextField.h */; };
+		B93744D11337078A00139912 /* AcOCUiComplexTextField.mm in Sources */ = {isa = PBXBuildFile; fileRef = B93744C41337078A00139912 /* AcOCUiComplexTextField.mm */; };
+		B93744D21337078A00139912 /* AcOCUiTextFieldWithButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B93744C51337078A00139912 /* AcOCUiTextFieldWithButton.h */; };
+		B93744D31337078A00139912 /* AcOCUiTextFieldWithButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = B93744C61337078A00139912 /* AcOCUiTextFieldWithButton.mm */; };
+		B93744D41337078A00139912 /* AcOCUiTextFieldWithCircularSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = B93744C71337078A00139912 /* AcOCUiTextFieldWithCircularSlider.h */; };
+		B93744D51337078A00139912 /* AcOCUiTextFieldWithCircularSlider.mm in Sources */ = {isa = PBXBuildFile; fileRef = B93744C81337078A00139912 /* AcOCUiTextFieldWithCircularSlider.mm */; };
+		B93744D61337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = B93744C91337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.h */; };
+		B93744D71337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.mm in Sources */ = {isa = PBXBuildFile; fileRef = B93744CA1337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.mm */; };
+		B93744D81337078A00139912 /* AcOCUiTextFieldWithStepper.h in Headers */ = {isa = PBXBuildFile; fileRef = B93744CB1337078A00139912 /* AcOCUiTextFieldWithStepper.h */; };
+		B93744D91337078A00139912 /* AcOCUiTextFieldWithStepper.mm in Sources */ = {isa = PBXBuildFile; fileRef = B93744CC1337078A00139912 /* AcOCUiTextFieldWithStepper.mm */; };
+		B93FBD4112DECDF00063092A /* AcOCUiScroller.h in Headers */ = {isa = PBXBuildFile; fileRef = B93FBD3F12DECDF00063092A /* AcOCUiScroller.h */; };
+		B93FBD4212DECDF00063092A /* AcOCUiScroller.mm in Sources */ = {isa = PBXBuildFile; fileRef = B93FBD4012DECDF00063092A /* AcOCUiScroller.mm */; };
+		B93FBD8E12DED5830063092A /* TestScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = B93FBD8C12DED5830063092A /* TestScrollView.h */; };
+		B93FBD8F12DED5830063092A /* TestScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FBD8D12DED5830063092A /* TestScrollView.m */; };
+		B95108271306950400BDF105 /* NSText+NSTextDelegateEx.mm in Sources */ = {isa = PBXBuildFile; fileRef = B95108251306950400BDF105 /* NSText+NSTextDelegateEx.mm */; };
+		B95108281306950400BDF105 /* NSText+NSTextDelegateEx.h in Headers */ = {isa = PBXBuildFile; fileRef = B95108261306950400BDF105 /* NSText+NSTextDelegateEx.h */; };
+		B951CFDB12B9FA1C00820148 /* AcOCUiPopupButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B951CFD912B9FA1C00820148 /* AcOCUiPopupButtonCell.h */; };
+		B951CFDC12B9FA1C00820148 /* AcOCUiPopupButtonCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B951CFDA12B9FA1C00820148 /* AcOCUiPopupButtonCell.mm */; };
+		B95D62FC130CFD1900E86587 /* AcTheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95D62F8130CFD0600E86587 /* AcTheme.framework */; };
+		B95D63ED130D10A800E86587 /* AcTheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95D62F8130CFD0600E86587 /* AcTheme.framework */; };
+		B96CB2FA133C9B0F0071AF8C /* TestView.h in Headers */ = {isa = PBXBuildFile; fileRef = B96CB2F8133C9B0F0071AF8C /* TestView.h */; };
+		B9703D6812AF6363001F8F8A /* AcOCUiCheckBoxCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B9703D6612AF6363001F8F8A /* AcOCUiCheckBoxCell.h */; };
+		B9703D6912AF6363001F8F8A /* AcOCUiCheckBoxCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9703D6712AF6363001F8F8A /* AcOCUiCheckBoxCell.mm */; };
+		B9703D7F12AF6734001F8F8A /* AcOCUiOptionButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B9703D7D12AF6734001F8F8A /* AcOCUiOptionButtonCell.h */; };
+		B9703D8012AF6734001F8F8A /* AcOCUiOptionButtonCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9703D7E12AF6734001F8F8A /* AcOCUiOptionButtonCell.mm */; };
+		B9703D8312AF6765001F8F8A /* AcOCUiRadioButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B9703D8112AF6765001F8F8A /* AcOCUiRadioButtonCell.h */; };
+		B9703D8412AF6765001F8F8A /* AcOCUiRadioButtonCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9703D8212AF6765001F8F8A /* AcOCUiRadioButtonCell.mm */; };
+		B9703D8712AF6790001F8F8A /* AcOCUiTabButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B9703D8512AF6790001F8F8A /* AcOCUiTabButtonCell.h */; };
+		B9703D8812AF6790001F8F8A /* AcOCUiTabButtonCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9703D8612AF6790001F8F8A /* AcOCUiTabButtonCell.mm */; };
+		B9703E7912AF7D35001F8F8A /* FrameworkInit.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9703E7712AF7D35001F8F8A /* FrameworkInit.mm */; };
+		B97040E312B07B2F001F8F8A /* AcOCUiControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B97040E212B07B2F001F8F8A /* AcOCUiControlsView.m */; };
+		B970BE5A12BB427800C57946 /* AcOCUiThemeOverride.h in Headers */ = {isa = PBXBuildFile; fileRef = B970BE5912BB427800C57946 /* AcOCUiThemeOverride.h */; };
+		B970BE9D12BB4F6B00C57946 /* AcOCUiThemeOverride.mm in Sources */ = {isa = PBXBuildFile; fileRef = B970BE9C12BB4F6B00C57946 /* AcOCUiThemeOverride.mm */; };
+		B970BFB412BB5D6300C57946 /* NSObject+HHAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = B970BFB212BB5D6300C57946 /* NSObject+HHAssociatedObjects.m */; };
+		B970BFF412BB66CD00C57946 /* AcOCUiControlsIBPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B970BFF312BB66CD00C57946 /* AcOCUiControlsIBPlugin.m */; };
+		B970C0B212BEEF6F00C57946 /* AcOCUiControls.h in Headers */ = {isa = PBXBuildFile; fileRef = 0259C57AFE90428111CA0C5A /* AcOCUiControls.h */; };
+		B970C0B312BEEF6F00C57946 /* AcOCUiControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* AcOCUiControls.m */; };
+		B9760A151340839000859E13 /* TestView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B96CB2F9133C9B0F0071AF8C /* TestView.mm */; };
+		B98E6AE412AE295A00004602 /* AcOCUiControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* AcOCUiControls.framework */; };
+		B98E6AEC12AE29B400004602 /* AcOCUiControls.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* AcOCUiControls.framework */; };
+		B98E6B1712AE2B7C00004602 /* TestAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B98E6B1612AE2B7C00004602 /* TestAppDelegate.mm */; };
+		B98E6B4912AE2E1300004602 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E6B4812AE2E1300004602 /* main.m */; };
+		B98E6B5012AE2E3200004602 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		B98E6B6A12AE2E6E00004602 /* TestApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98E6B6812AE2E6E00004602 /* TestApp.xib */; };
+		B9A3B37912AC8C6D00F1B706 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9A3B37812AC8C6D00F1B706 /* Localizable.strings */; };
+		B9B5440612E961DD00402364 /* AcOCUiComboBox.h in Headers */ = {isa = PBXBuildFile; fileRef = B9B5440412E961DD00402364 /* AcOCUiComboBox.h */; };
+		B9B5440712E961DD00402364 /* AcOCUiComboBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B5440512E961DD00402364 /* AcOCUiComboBox.mm */; };
+		B9B5442912E96C3300402364 /* AcOCUiControls.pch in Headers */ = {isa = PBXBuildFile; fileRef = B9B5442812E96C3300402364 /* AcOCUiControls.pch */; };
+		B9B5543C12E99AE7009756CB /* AcOCUiAutoCompleteDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B9B5543A12E99AE7009756CB /* AcOCUiAutoCompleteDataSource.h */; };
+		B9B5543D12E99AE7009756CB /* AcOCUiComboBoxPopupButtonBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B5543B12E99AE7009756CB /* AcOCUiComboBoxPopupButtonBridge.mm */; };
+		B9B82BD012E443B700617687 /* AcOCUiWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9B82BCE12E443B700617687 /* AcOCUiWindow.mm */; };
+		B9B82BD112E443B700617687 /* AcOCUiWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9B82BCF12E443B700617687 /* AcOCUiWindow.h */; };
+		B9C113FA12A901F2008139A9 /* flyout_button_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C113E712A90160008139A9 /* flyout_button_overlay.png */; };
+		B9F8C21B12F65D2C00A1D486 /* AcOCUiCommandMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F8C21912F65D2C00A1D486 /* AcOCUiCommandMenuItem.h */; };
+		B9F8C21C12F65D2C00A1D486 /* AcOCUiCommandMenuItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9F8C21A12F65D2C00A1D486 /* AcOCUiCommandMenuItem.mm */; };
+		B9F8DE4712F79F5300A1D486 /* AcOCUiComboBoxPopupButtonBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F8DE4612F79F5300A1D486 /* AcOCUiComboBoxPopupButtonBridge.h */; };
+		B9FE3F08130B95F000140322 /* AcOCLayoutFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FE3F04130B95F000140322 /* AcOCLayoutFrame.h */; };
+		B9FE3F09130B95F000140322 /* AcOCLayoutFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FE3F05130B95F000140322 /* AcOCLayoutFrame.m */; };
+		B9FE3F0A130B95F000140322 /* AcOCLayoutFrameHost.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FE3F06130B95F000140322 /* AcOCLayoutFrameHost.h */; };
+		B9FE3F0B130B95F000140322 /* AcOCLayoutFrameHost.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FE3F07130B95F000140322 /* AcOCLayoutFrameHost.m */; };
+		C044829F0C3328F4006E818F /* AcOCUiControlsViewIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = C044829E0C3328F4006E818F /* AcOCUiControlsViewIntegration.m */; };
+		C0A47C500A523B730004BDC3 /* AcOCUiControlsInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05B20D80A48CB530099B9E5 /* AcOCUiControlsInspector.xib */; };
+		C0D069560A49DF9100C95564 /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D069550A49DF9100C95564 /* InterfaceBuilderKit.framework */; };
+		D1AEDE470A6C289C0010C343 /* AcOCUiControlsLibrary.nib in Resources */ = {isa = PBXBuildFile; fileRef = D1AEDE460A6C289C0010C343 /* AcOCUiControlsLibrary.nib */; };
+		DAB9EEAA137BB0E000EF8633 /* AcOCUiVisorCloseButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = DAB9EE68137BAF1A00EF8633 /* AcOCUiVisorCloseButton.mm */; };
+		EAFF5374133B3E99009D9B78 /* AcOCUiRuleEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6A903D1339FA1D008A5257 /* AcOCUiRuleEditor.h */; };
+		EAFF5375133B3E99009D9B78 /* AcOCUiRuleEditorViewSlice.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6A903F1339FA1D008A5257 /* AcOCUiRuleEditorViewSlice.h */; };
+		EAFF5376133B3E99009D9B78 /* AcOCUiRuleEditorViewSliceRow.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6A90411339FA1D008A5257 /* AcOCUiRuleEditorViewSliceRow.h */; };
+		EAFF5377133B3E99009D9B78 /* AcOCUiRuleEditorViewSliceHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6A90431339FA1D008A5257 /* AcOCUiRuleEditorViewSliceHolder.h */; };
+		EAFF5378133B3E99009D9B78 /* AcOCUiRuleEditorCache.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6A90451339FA1D008A5257 /* AcOCUiRuleEditorCache.h */; };
+		EAFF5379133B3E99009D9B78 /* AcOCUiRuleEditorViewUnboundRowHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6A90471339FA1D008A5257 /* AcOCUiRuleEditorViewUnboundRowHolder.h */; };
+		EAFF5380133B3EB6009D9B78 /* AcOCUiRuleEditor.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA6A903E1339FA1D008A5257 /* AcOCUiRuleEditor.mm */; };
+		EAFF5381133B3EB6009D9B78 /* AcOCUiRuleEditorViewSlice.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA6A90401339FA1D008A5257 /* AcOCUiRuleEditorViewSlice.mm */; };
+		EAFF5382133B3EB6009D9B78 /* AcOCUiRuleEditorViewSliceRow.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA6A90421339FA1D008A5257 /* AcOCUiRuleEditorViewSliceRow.mm */; };
+		EAFF5383133B3EB6009D9B78 /* AcOCUiRuleEditorViewSliceHolder.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA6A90441339FA1D008A5257 /* AcOCUiRuleEditorViewSliceHolder.mm */; };
+		EAFF5384133B3EB6009D9B78 /* AcOCUiRuleEditorCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA6A90461339FA1D008A5257 /* AcOCUiRuleEditorCache.mm */; };
+		EAFF5385133B3EB6009D9B78 /* AcOCUiRuleEditorViewUnboundRowHolder.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA6A90481339FA1D008A5257 /* AcOCUiRuleEditorViewUnboundRowHolder.mm */; };
+		F71CF1A113035A81008FBB35 /* AcOCUiAutoCompleteMenuController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F71CF1A013035A81008FBB35 /* AcOCUiAutoCompleteMenuController.mm */; };
+		F71CF1A213035A81008FBB35 /* AcOCUiAutoCompleteMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = F71CF19F13035A81008FBB35 /* AcOCUiAutoCompleteMenuController.h */; };
+		F71CF1A313035A81008FBB35 /* AcOCUiAutoCompleteMenuController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F71CF1A013035A81008FBB35 /* AcOCUiAutoCompleteMenuController.mm */; };
+		F7F9EAD712F2104500D8AC69 /* AcOCUiAutoCompleteTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F9EAD412F2104500D8AC69 /* AcOCUiAutoCompleteTextView.h */; };
+		F7F9EAEE12F2117E00D8AC69 /* AcOCUiAutoCompleteTextView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F7F9EAD512F2104500D8AC69 /* AcOCUiAutoCompleteTextView.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53DF6902067E5B930090B5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1AC9600486D14A00FE50C9;
+			remoteInfo = AcOCUiControls;
+		};
+		53DF6904067E5B930090B5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
+			remoteInfo = AcOCUiControlsFramework;
+		};
+		546DEAEF067F62F70098DCC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
+			remoteInfo = AcOCUiControlsFramework;
+		};
+		B95D62F7130CFD0600E86587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B95D62EB130CFD0600E86587 /* AcTheme.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = AcTheme;
+		};
+		B95D62FA130CFD1100E86587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B95D62EB130CFD0600E86587 /* AcTheme.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = AcTheme;
+		};
+		B98E6AE212AE295300004602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
+			remoteInfo = AcOCUiControlsFramework;
+		};
+		B98E6AF412AE2A1200004602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98E6ADB12AE294A00004602;
+			remoteInfo = TestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B98E6AE912AE29A000004602 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B98E6AEC12AE29B400004602 /* AcOCUiControls.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0259C576FE90428111CA0C5A /* AcOCUiControls.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AcOCUiControls.m; sourceTree = "<group>"; };
+		0259C577FE90428111CA0C5A /* AcOCUiControlsInspector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AcOCUiControlsInspector.m; sourceTree = "<group>"; };
+		0259C57AFE90428111CA0C5A /* AcOCUiControls.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AcOCUiControls.h; sourceTree = "<group>"; };
+		0259C57BFE90428111CA0C5A /* AcOCUiControlsInspector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AcOCUiControlsInspector.h; sourceTree = "<group>"; };
+		13F8B88807B434F6008AE28D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		13F8B88907B434F6008AE28D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		13F8B88A07B434F6008AE28D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		26C40CBC132E269300AF84AB /* AcOCUiPopupButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiPopupButtonItem.h; sourceTree = "<group>"; };
+		26C40CBF132E26A000AF84AB /* AcOCUiPopupButtonItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiPopupButtonItem.mm; sourceTree = "<group>"; };
+		2BDF7018133893DD00EB63AD /* TestTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTreeNode.h; sourceTree = "<group>"; };
+		2BDF7019133893DD00EB63AD /* TestTreeNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestTreeNode.mm; sourceTree = "<group>"; };
+		2BDF73AF1339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiInfoCheckBoxCell.h; sourceTree = "<group>"; };
+		2BDF73B01339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiInfoCheckBoxCell.mm; sourceTree = "<group>"; };
+		32DBCF980370C29C00C91783 /* AcOCUiControls_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiControls_Prefix.pch; sourceTree = "<group>"; };
+		3D03F20712AEDCB800407022 /* AcOCUiControls_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiControls_Utils.h; sourceTree = "<group>"; };
+		3D03F20812AEDCB800407022 /* AcOCUiControls_Utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiControls_Utils.mm; sourceTree = "<group>"; };
+		53DF68FD067E5B5A0090B5B0 /* AcOCUiControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AcOCUiControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D33B2806778E3300C9C163 /* AcOCUiControlsView.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AcOCUiControlsView.classdescription; sourceTree = "<group>"; };
+		84254B5613723DEF00E0D322 /* RuleEditor_Add_Compound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RuleEditor_Add_Compound.png; path = Resources/RuleEditor_Add_Compound.png; sourceTree = "<group>"; };
+		84254B5713723DEF00E0D322 /* RuleEditor_Add_Simple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RuleEditor_Add_Simple.png; path = Resources/RuleEditor_Add_Simple.png; sourceTree = "<group>"; };
+		84254B5813723DEF00E0D322 /* RuleEditor_Remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RuleEditor_Remove.png; path = Resources/RuleEditor_Remove.png; sourceTree = "<group>"; };
+		8D1AC9740486D14A00FE50C9 /* AcOCUiControls.ibplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcOCUiControls.ibplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B90109D5130BDE16007FC1CC /* scroll_down_triangle_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scroll_down_triangle_hover.png; path = Resources/scroll_down_triangle_hover.png; sourceTree = "<group>"; };
+		B90109D6130BDE16007FC1CC /* scroll_left_triangle_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scroll_left_triangle_hover.png; path = Resources/scroll_left_triangle_hover.png; sourceTree = "<group>"; };
+		B90109D7130BDE16007FC1CC /* scroll_right_triangle_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scroll_right_triangle_hover.png; path = Resources/scroll_right_triangle_hover.png; sourceTree = "<group>"; };
+		B90109D8130BDE16007FC1CC /* scroll_up_triangle_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scroll_up_triangle_hover.png; path = Resources/scroll_up_triangle_hover.png; sourceTree = "<group>"; };
+		B90109DE130BDE2E007FC1CC /* Dark_Checkbox_Mixed_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Checkbox_Mixed_Hover.png; path = Resources/Dark_Checkbox_Mixed_Hover.png; sourceTree = "<group>"; };
+		B90109DF130BDE2E007FC1CC /* Dark_Checkbox_Mixed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Checkbox_Mixed.png; path = Resources/Dark_Checkbox_Mixed.png; sourceTree = "<group>"; };
+		B90109E0130BDE2E007FC1CC /* Dark_Checkbox_Off_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Checkbox_Off_Hover.png; path = Resources/Dark_Checkbox_Off_Hover.png; sourceTree = "<group>"; };
+		B90109E1130BDE2E007FC1CC /* Dark_Checkbox_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Checkbox_Off.png; path = Resources/Dark_Checkbox_Off.png; sourceTree = "<group>"; };
+		B90109E2130BDE2E007FC1CC /* Dark_Checkbox_On_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Checkbox_On_Hover.png; path = Resources/Dark_Checkbox_On_Hover.png; sourceTree = "<group>"; };
+		B90109E3130BDE2E007FC1CC /* Dark_Checkbox_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Checkbox_On.png; path = Resources/Dark_Checkbox_On.png; sourceTree = "<group>"; };
+		B90109E4130BDE2E007FC1CC /* Dark_collapse_down_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_collapse_down_hover.png; path = Resources/Dark_collapse_down_hover.png; sourceTree = "<group>"; };
+		B90109E5130BDE2E007FC1CC /* Dark_collapse_down_idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_collapse_down_idle.png; path = Resources/Dark_collapse_down_idle.png; sourceTree = "<group>"; };
+		B90109E6130BDE2E007FC1CC /* Dark_collapse_up_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_collapse_up_hover.png; path = Resources/Dark_collapse_up_hover.png; sourceTree = "<group>"; };
+		B90109E7130BDE2E007FC1CC /* Dark_collapse_up_idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_collapse_up_idle.png; path = Resources/Dark_collapse_up_idle.png; sourceTree = "<group>"; };
+		B90109E8130BDE2E007FC1CC /* Dark_lock_closed_hover_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_lock_closed_hover_12.png; path = Resources/Dark_lock_closed_hover_12.png; sourceTree = "<group>"; };
+		B90109E9130BDE2E007FC1CC /* Dark_lock_closed_idle_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_lock_closed_idle_12.png; path = Resources/Dark_lock_closed_idle_12.png; sourceTree = "<group>"; };
+		B90109EA130BDE2E007FC1CC /* Dark_lock_open_hover_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_lock_open_hover_12.png; path = Resources/Dark_lock_open_hover_12.png; sourceTree = "<group>"; };
+		B90109EB130BDE2E007FC1CC /* Dark_lock_open_idle_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_lock_open_idle_12.png; path = Resources/Dark_lock_open_idle_12.png; sourceTree = "<group>"; };
+		B90109EC130BDE2E007FC1CC /* Dark_Menu_Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Menu_Check.png; path = Resources/Dark_Menu_Check.png; sourceTree = "<group>"; };
+		B90109ED130BDE2E007FC1CC /* Dark_Radio_Mixed_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Radio_Mixed_Hover.png; path = Resources/Dark_Radio_Mixed_Hover.png; sourceTree = "<group>"; };
+		B90109EE130BDE2E007FC1CC /* Dark_Radio_Mixed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Radio_Mixed.png; path = Resources/Dark_Radio_Mixed.png; sourceTree = "<group>"; };
+		B90109EF130BDE2E007FC1CC /* Dark_Radio_Off_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Radio_Off_Hover.png; path = Resources/Dark_Radio_Off_Hover.png; sourceTree = "<group>"; };
+		B90109F0130BDE2E007FC1CC /* Dark_Radio_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Radio_Off.png; path = Resources/Dark_Radio_Off.png; sourceTree = "<group>"; };
+		B90109F1130BDE2E007FC1CC /* Dark_Radio_On_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Radio_On_Hover.png; path = Resources/Dark_Radio_On_Hover.png; sourceTree = "<group>"; };
+		B90109F2130BDE2E007FC1CC /* Dark_Radio_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Radio_On.png; path = Resources/Dark_Radio_On.png; sourceTree = "<group>"; };
+		B90109F3130BDE2E007FC1CC /* Dark_scroll_down_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_scroll_down_triangle.png; path = Resources/Dark_scroll_down_triangle.png; sourceTree = "<group>"; };
+		B90109F4130BDE2E007FC1CC /* Dark_scroll_left_triangle_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_scroll_left_triangle_hover.png; path = Resources/Dark_scroll_left_triangle_hover.png; sourceTree = "<group>"; };
+		B90109F5130BDE2E007FC1CC /* Dark_scroll_left_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_scroll_left_triangle.png; path = Resources/Dark_scroll_left_triangle.png; sourceTree = "<group>"; };
+		B90109F6130BDE2E007FC1CC /* Dark_scroll_right_triangle_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_scroll_right_triangle_hover.png; path = Resources/Dark_scroll_right_triangle_hover.png; sourceTree = "<group>"; };
+		B90109F7130BDE2E007FC1CC /* Dark_scroll_right_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_scroll_right_triangle.png; path = Resources/Dark_scroll_right_triangle.png; sourceTree = "<group>"; };
+		B90109F8130BDE2E007FC1CC /* Dark_scroll_up_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_scroll_up_triangle.png; path = Resources/Dark_scroll_up_triangle.png; sourceTree = "<group>"; };
+		B9010A14130BDE39007FC1CC /* Light_Checkbox_Mixed_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Checkbox_Mixed_Hover.png; path = Resources/Light_Checkbox_Mixed_Hover.png; sourceTree = "<group>"; };
+		B9010A15130BDE39007FC1CC /* Light_Checkbox_Mixed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Checkbox_Mixed.png; path = Resources/Light_Checkbox_Mixed.png; sourceTree = "<group>"; };
+		B9010A16130BDE39007FC1CC /* Light_Checkbox_Off_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Checkbox_Off_Hover.png; path = Resources/Light_Checkbox_Off_Hover.png; sourceTree = "<group>"; };
+		B9010A17130BDE39007FC1CC /* Light_Checkbox_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Checkbox_Off.png; path = Resources/Light_Checkbox_Off.png; sourceTree = "<group>"; };
+		B9010A18130BDE39007FC1CC /* Light_Checkbox_On_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Checkbox_On_Hover.png; path = Resources/Light_Checkbox_On_Hover.png; sourceTree = "<group>"; };
+		B9010A19130BDE39007FC1CC /* Light_Checkbox_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Checkbox_On.png; path = Resources/Light_Checkbox_On.png; sourceTree = "<group>"; };
+		B9010A1A130BDE39007FC1CC /* Light_collapse_down_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_collapse_down_hover.png; path = Resources/Light_collapse_down_hover.png; sourceTree = "<group>"; };
+		B9010A1B130BDE39007FC1CC /* Light_collapse_down_idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_collapse_down_idle.png; path = Resources/Light_collapse_down_idle.png; sourceTree = "<group>"; };
+		B9010A1C130BDE39007FC1CC /* Light_collapse_up_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_collapse_up_hover.png; path = Resources/Light_collapse_up_hover.png; sourceTree = "<group>"; };
+		B9010A1D130BDE39007FC1CC /* Light_collapse_up_idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_collapse_up_idle.png; path = Resources/Light_collapse_up_idle.png; sourceTree = "<group>"; };
+		B9010A1E130BDE39007FC1CC /* Light_lock_closed_hover_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_lock_closed_hover_12.png; path = Resources/Light_lock_closed_hover_12.png; sourceTree = "<group>"; };
+		B9010A1F130BDE39007FC1CC /* Light_lock_closed_idle_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_lock_closed_idle_12.png; path = Resources/Light_lock_closed_idle_12.png; sourceTree = "<group>"; };
+		B9010A20130BDE39007FC1CC /* Light_lock_open_hover_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_lock_open_hover_12.png; path = Resources/Light_lock_open_hover_12.png; sourceTree = "<group>"; };
+		B9010A21130BDE39007FC1CC /* Light_lock_open_idle_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_lock_open_idle_12.png; path = Resources/Light_lock_open_idle_12.png; sourceTree = "<group>"; };
+		B9010A22130BDE39007FC1CC /* Light_Menu_Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Menu_Check.png; path = Resources/Light_Menu_Check.png; sourceTree = "<group>"; };
+		B9010A23130BDE39007FC1CC /* Light_Radio_Off_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Radio_Off_Hover.png; path = Resources/Light_Radio_Off_Hover.png; sourceTree = "<group>"; };
+		B9010A24130BDE39007FC1CC /* Light_Radio_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Radio_Off.png; path = Resources/Light_Radio_Off.png; sourceTree = "<group>"; };
+		B9010A25130BDE39007FC1CC /* Light_Radio_On_Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Radio_On_Hover.png; path = Resources/Light_Radio_On_Hover.png; sourceTree = "<group>"; };
+		B9010A26130BDE39007FC1CC /* Light_Radio_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Radio_On.png; path = Resources/Light_Radio_On.png; sourceTree = "<group>"; };
+		B9010A27130BDE39007FC1CC /* Light_scroll_down_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_scroll_down_triangle.png; path = Resources/Light_scroll_down_triangle.png; sourceTree = "<group>"; };
+		B9010A28130BDE39007FC1CC /* Light_scroll_left_triangle_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_scroll_left_triangle_hover.png; path = Resources/Light_scroll_left_triangle_hover.png; sourceTree = "<group>"; };
+		B9010A29130BDE39007FC1CC /* Light_scroll_left_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_scroll_left_triangle.png; path = Resources/Light_scroll_left_triangle.png; sourceTree = "<group>"; };
+		B9010A2A130BDE39007FC1CC /* Light_scroll_right_triangle_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_scroll_right_triangle_hover.png; path = Resources/Light_scroll_right_triangle_hover.png; sourceTree = "<group>"; };
+		B9010A2B130BDE39007FC1CC /* Light_scroll_right_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_scroll_right_triangle.png; path = Resources/Light_scroll_right_triangle.png; sourceTree = "<group>"; };
+		B9010A2C130BDE39007FC1CC /* Light_scroll_up_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_scroll_up_triangle.png; path = Resources/Light_scroll_up_triangle.png; sourceTree = "<group>"; };
+		B90F6C5812A8C9170093F792 /* AcOCUiControls.xcconfig */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.xcconfig; path = AcOCUiControls.xcconfig; sourceTree = "<group>"; };
+		B90F6C6E12A8C9E90093F792 /* AcOCCanResignKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCCanResignKeyWindow.h; sourceTree = SOURCE_ROOT; };
+		B90F6C6F12A8C9E90093F792 /* diagnostic.cpp */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.cpp; name = diagnostic.cpp; path = ../../../../Platform/WinStubs/src/diagnostic.cpp; sourceTree = SOURCE_ROOT; };
+		B90F6C7512A8C9E90093F792 /* AcOCUiNSCell.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiNSCell.h; sourceTree = SOURCE_ROOT; };
+		B90F6C7612A8C9E90093F792 /* AcOCUiNSCell.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiNSCell.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C7712A8C9E90093F792 /* AcOCUiBox.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiBox.h; sourceTree = SOURCE_ROOT; };
+		B90F6C7812A8C9E90093F792 /* AcOCUiBox.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiBox.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C7912A8C9E90093F792 /* AcOCUiSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiSliderCell.h; sourceTree = SOURCE_ROOT; };
+		B90F6C7A12A8C9E90093F792 /* AcOCUiSliderCell.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiSliderCell.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C7B12A8C9E90093F792 /* AcOCUiTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTabBarView.h; sourceTree = SOURCE_ROOT; };
+		B90F6C7C12A8C9E90093F792 /* AcOCUiTabBarView.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTabBarView.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C7D12A8C9E90093F792 /* AcOCUiMatrixCell.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiMatrixCell.h; sourceTree = "<group>"; };
+		B90F6C7E12A8C9E90093F792 /* AcOCUiMatrixCell.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiMatrixCell.mm; sourceTree = "<group>"; };
+		B90F6C7F12A8C9E90093F792 /* AcOCUiComplexCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiComplexCellLayout.h; sourceTree = "<group>"; };
+		B90F6C8012A8C9E90093F792 /* AcOCUiComplexCellLayout.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiComplexCellLayout.mm; sourceTree = "<group>"; };
+		B90F6C8212A8C9E90093F792 /* AcOCUiButton.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiButton.h; sourceTree = SOURCE_ROOT; };
+		B90F6C8312A8C9E90093F792 /* AcOCUiButton.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiButton.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C8412A8C9E90093F792 /* AcOCUiButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiButtonCell.h; sourceTree = SOURCE_ROOT; };
+		B90F6C8512A8C9E90093F792 /* AcOCUiButtonCell.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiButtonCell.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C8612A8C9E90093F792 /* AcOCUiRolloverImageButton.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiRolloverImageButton.h; sourceTree = SOURCE_ROOT; };
+		B90F6C8712A8C9E90093F792 /* AcOCUiRolloverImageButton.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiRolloverImageButton.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C8812A8C9E90093F792 /* AcOCUiLockButton.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiLockButton.h; sourceTree = SOURCE_ROOT; };
+		B90F6C8912A8C9E90093F792 /* AcOCUiLockButton.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiLockButton.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C8A12A8C9E90093F792 /* AcOCUiScrollButton.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiScrollButton.h; sourceTree = "<group>"; };
+		B90F6C8B12A8C9E90093F792 /* AcOCUiScrollButton.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiScrollButton.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C8C12A8C9E90093F792 /* AcOCUiDisclosureButton.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiDisclosureButton.h; sourceTree = SOURCE_ROOT; };
+		B90F6C8D12A8C9E90093F792 /* AcOCUiDisclosureButton.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiDisclosureButton.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C8E12A8C9E90093F792 /* AcOCUiSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiSquareButton.h; sourceTree = SOURCE_ROOT; };
+		B90F6C8F12A8C9E90093F792 /* AcOCUiSquareButton.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiSquareButton.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C9012A8C9E90093F792 /* AcOCUiStepperCell.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiStepperCell.h; sourceTree = SOURCE_ROOT; };
+		B90F6C9112A8C9E90093F792 /* AcOCUiStepperCell.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiStepperCell.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C9312A8C9E90093F792 /* AcOCUiTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTextFieldCell.h; sourceTree = SOURCE_ROOT; };
+		B90F6C9412A8C9E90093F792 /* AcOCUiTextFieldCell.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTextFieldCell.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C9512A8C9E90093F792 /* AcOCTextFieldEditor.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCTextFieldEditor.h; sourceTree = SOURCE_ROOT; };
+		B90F6C9612A8C9E90093F792 /* AcOCUiTextFieldEditor.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTextFieldEditor.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C9712A8C9E90093F792 /* AcOCUiTextLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTextLabelCell.h; sourceTree = SOURCE_ROOT; };
+		B90F6C9812A8C9E90093F792 /* AcOCUiTextLabelCell.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTextLabelCell.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C9A12A8C9E90093F792 /* AcOCUiFlyoutButton.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiFlyoutButton.h; sourceTree = SOURCE_ROOT; };
+		B90F6C9B12A8C9E90093F792 /* AcOCUiFlyoutButton.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiFlyoutButton.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C9D12A8C9E90093F792 /* AcOCUiMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiMenuItemCell.h; sourceTree = SOURCE_ROOT; };
+		B90F6C9E12A8C9E90093F792 /* AcOCUiMenuItemCell.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiMenuItemCell.mm; sourceTree = SOURCE_ROOT; };
+		B90F6C9F12A8C9E90093F792 /* AcOCUiMenuOverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiMenuOverlayWindow.h; sourceTree = SOURCE_ROOT; };
+		B90F6CA012A8C9E90093F792 /* AcOCUiMenuOverlayWindow.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiMenuOverlayWindow.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CA112A8C9E90093F792 /* AcOCUiFlyoutMenu.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiFlyoutMenu.h; sourceTree = SOURCE_ROOT; };
+		B90F6CA212A8C9E90093F792 /* AcOCUiFlyoutMenu.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiFlyoutMenu.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CA312A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiFlyoutMenuWindow.h; sourceTree = SOURCE_ROOT; };
+		B90F6CA412A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiFlyoutMenuWindow.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CA512A8C9E90093F792 /* AcOCUiFlyoutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiFlyoutWindowController.h; sourceTree = SOURCE_ROOT; };
+		B90F6CA612A8C9E90093F792 /* AcOCUiFlyoutWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiFlyoutWindowController.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CA712A8C9E90093F792 /* AcOCUiFlyoutWindow.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiFlyoutWindow.h; sourceTree = SOURCE_ROOT; };
+		B90F6CA812A8C9E90093F792 /* AcOCUiFlyoutWindow.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiFlyoutWindow.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CAA12A8C9E90093F792 /* AcOCUiBinder.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiBinder.h; sourceTree = SOURCE_ROOT; };
+		B90F6CAB12A8C9E90093F792 /* AcOCUiBinder.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiBinder.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CAC12A8C9E90093F792 /* AcOCUiPopupButton.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiPopupButton.h; sourceTree = SOURCE_ROOT; };
+		B90F6CAD12A8C9E90093F792 /* AcOCUiPopupButton.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiPopupButton.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CAF12A8C9E90093F792 /* AcOCUiSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiSegmentedControl.h; sourceTree = SOURCE_ROOT; };
+		B90F6CB012A8C9E90093F792 /* AcOCUiSegmentedControl.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiSegmentedControl.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CB112A8C9E90093F792 /* AcOCUiSegmentedCell.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiSegmentedCell.h; sourceTree = SOURCE_ROOT; };
+		B90F6CB212A8C9E90093F792 /* AcOCUiSegmentedCell.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiSegmentedCell.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CB412A8C9E90093F792 /* AcOCUiTableView.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTableView.h; sourceTree = SOURCE_ROOT; };
+		B90F6CB512A8C9E90093F792 /* AcOCUiTableView.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTableView.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CB712A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiOverlayPanelSeparator.h; sourceTree = SOURCE_ROOT; };
+		B90F6CB812A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiOverlayPanelSeparator.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CB912A8C9E90093F792 /* AcOCUiSeparator.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiSeparator.h; sourceTree = SOURCE_ROOT; };
+		B90F6CBA12A8C9E90093F792 /* AcOCUiSeparator.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiSeparator.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CBB12A8C9E90093F792 /* AcOCUiPaletteSeparator.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiPaletteSeparator.h; sourceTree = SOURCE_ROOT; };
+		B90F6CBC12A8C9E90093F792 /* AcOCUiPaletteSeparator.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiPaletteSeparator.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CBE12A8C9E90093F792 /* AcOCUiOverlayPanel.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiOverlayPanel.h; sourceTree = SOURCE_ROOT; };
+		B90F6CBF12A8C9E90093F792 /* AcOCUiOverlayPanel.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiOverlayPanel.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CC012A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiOverlayPanelFrameView.h; sourceTree = SOURCE_ROOT; };
+		B90F6CC112A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiOverlayPanelFrameView.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CC312A8C9E90093F792 /* AcOCUiTheme.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTheme.h; sourceTree = SOURCE_ROOT; };
+		B90F6CC412A8C9E90093F792 /* AcOCUiTheme.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTheme.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CC512A8C9E90093F792 /* AcOCStylizer.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCStylizer.h; sourceTree = SOURCE_ROOT; };
+		B90F6CC612A8C9E90093F792 /* AcOCStylizer.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCStylizer.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CC712A8C9E90093F792 /* AcControlProvider.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcControlProvider.h; sourceTree = SOURCE_ROOT; };
+		B90F6CC812A8C9E90093F792 /* AcControlStylizer.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcControlStylizer.h; sourceTree = SOURCE_ROOT; };
+		B90F6CC912A8C9E90093F792 /* AcControlStylizer.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcControlStylizer.mm; sourceTree = SOURCE_ROOT; };
+		B90F6CCA12A8C9E90093F792 /* AcOCUiTextAttributes.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTextAttributes.h; sourceTree = SOURCE_ROOT; };
+		B90F6CCB12A8C9E90093F792 /* AcOCUiTextAttributes.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTextAttributes.mm; sourceTree = SOURCE_ROOT; };
+		B90F6D2B12A8CA210093F792 /* NSString+AcOCStringUtils.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+AcOCStringUtils.mm"; sourceTree = SOURCE_ROOT; };
+		B90F6D2C12A8CA210093F792 /* NSImage+AcOCUiAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+AcOCUiAdditions.mm"; sourceTree = SOURCE_ROOT; };
+		B93744C31337078A00139912 /* AcOCUiComplexTextField.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiComplexTextField.h; sourceTree = "<group>"; };
+		B93744C41337078A00139912 /* AcOCUiComplexTextField.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiComplexTextField.mm; sourceTree = "<group>"; };
+		B93744C51337078A00139912 /* AcOCUiTextFieldWithButton.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTextFieldWithButton.h; sourceTree = "<group>"; };
+		B93744C61337078A00139912 /* AcOCUiTextFieldWithButton.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTextFieldWithButton.mm; sourceTree = "<group>"; };
+		B93744C71337078A00139912 /* AcOCUiTextFieldWithCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTextFieldWithCircularSlider.h; sourceTree = "<group>"; };
+		B93744C81337078A00139912 /* AcOCUiTextFieldWithCircularSlider.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTextFieldWithCircularSlider.mm; sourceTree = "<group>"; };
+		B93744C91337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTextFieldWithHorizontalSlider.h; sourceTree = "<group>"; };
+		B93744CA1337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTextFieldWithHorizontalSlider.mm; sourceTree = "<group>"; };
+		B93744CB1337078A00139912 /* AcOCUiTextFieldWithStepper.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiTextFieldWithStepper.h; sourceTree = "<group>"; };
+		B93744CC1337078A00139912 /* AcOCUiTextFieldWithStepper.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTextFieldWithStepper.mm; sourceTree = "<group>"; };
+		B93FBD3F12DECDF00063092A /* AcOCUiScroller.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiScroller.h; sourceTree = SOURCE_ROOT; };
+		B93FBD4012DECDF00063092A /* AcOCUiScroller.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiScroller.mm; sourceTree = SOURCE_ROOT; };
+		B93FBD8C12DED5830063092A /* TestScrollView.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = TestScrollView.h; sourceTree = "<group>"; };
+		B93FBD8D12DED5830063092A /* TestScrollView.m */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.objc; path = TestScrollView.m; sourceTree = "<group>"; };
+		B95108251306950400BDF105 /* NSText+NSTextDelegateEx.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSText+NSTextDelegateEx.mm"; sourceTree = SOURCE_ROOT; };
+		B95108261306950400BDF105 /* NSText+NSTextDelegateEx.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = "NSText+NSTextDelegateEx.h"; sourceTree = SOURCE_ROOT; };
+		B951CFD912B9FA1C00820148 /* AcOCUiPopupButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiPopupButtonCell.h; sourceTree = "<group>"; };
+		B951CFDA12B9FA1C00820148 /* AcOCUiPopupButtonCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiPopupButtonCell.mm; sourceTree = "<group>"; };
+		B95D62EB130CFD0600E86587 /* AcTheme.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AcTheme.xcodeproj; path = ../AcTheme/AcTheme.xcodeproj; sourceTree = SOURCE_ROOT; };
+		B95D633A130CFDCF00E86587 /* DebugAcadProjectTWAE.xcconfig */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.xcconfig; name = DebugAcadProjectTWAE.xcconfig; path = ../../../../../develop/global/src/coreacad/osxbld/XCodeConfigs/Project/DebugAcadProjectTWAE.xcconfig; sourceTree = SOURCE_ROOT; };
+		B95D633B130CFDCF00E86587 /* ReleaseAcadProjectTWAE.xcconfig */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.xcconfig; name = ReleaseAcadProjectTWAE.xcconfig; path = ../../../../../develop/global/src/coreacad/osxbld/XCodeConfigs/Project/ReleaseAcadProjectTWAE.xcconfig; sourceTree = SOURCE_ROOT; };
+		B96CB2F8133C9B0F0071AF8C /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		B96CB2F9133C9B0F0071AF8C /* TestView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestView.mm; sourceTree = "<group>"; };
+		B9703D6612AF6363001F8F8A /* AcOCUiCheckBoxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiCheckBoxCell.h; sourceTree = "<group>"; };
+		B9703D6712AF6363001F8F8A /* AcOCUiCheckBoxCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiCheckBoxCell.mm; sourceTree = "<group>"; };
+		B9703D7D12AF6734001F8F8A /* AcOCUiOptionButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiOptionButtonCell.h; sourceTree = "<group>"; };
+		B9703D7E12AF6734001F8F8A /* AcOCUiOptionButtonCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiOptionButtonCell.mm; sourceTree = "<group>"; };
+		B9703D8112AF6765001F8F8A /* AcOCUiRadioButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiRadioButtonCell.h; sourceTree = "<group>"; };
+		B9703D8212AF6765001F8F8A /* AcOCUiRadioButtonCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiRadioButtonCell.mm; sourceTree = "<group>"; };
+		B9703D8512AF6790001F8F8A /* AcOCUiTabButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiTabButtonCell.h; sourceTree = "<group>"; };
+		B9703D8612AF6790001F8F8A /* AcOCUiTabButtonCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiTabButtonCell.mm; sourceTree = "<group>"; };
+		B9703E7712AF7D35001F8F8A /* FrameworkInit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FrameworkInit.mm; sourceTree = "<group>"; };
+		B97040E112B07B2F001F8F8A /* AcOCUiControlsView.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiControlsView.h; sourceTree = "<group>"; };
+		B97040E212B07B2F001F8F8A /* AcOCUiControlsView.m */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.objc; path = AcOCUiControlsView.m; sourceTree = "<group>"; };
+		B970BE5912BB427800C57946 /* AcOCUiThemeOverride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiThemeOverride.h; sourceTree = "<group>"; };
+		B970BE9C12BB4F6B00C57946 /* AcOCUiThemeOverride.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiThemeOverride.mm; sourceTree = "<group>"; };
+		B970BFB112BB5D6300C57946 /* NSObject+HHAssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; name = "NSObject+HHAssociatedObjects.h"; path = "HHAssociatedObjects/NSObject+HHAssociatedObjects.h"; sourceTree = "<group>"; };
+		B970BFB212BB5D6300C57946 /* NSObject+HHAssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.objc; name = "NSObject+HHAssociatedObjects.m"; path = "HHAssociatedObjects/NSObject+HHAssociatedObjects.m"; sourceTree = "<group>"; };
+		B970BFF212BB66CD00C57946 /* AcOCUiControlsIBPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiControlsIBPlugin.h; sourceTree = "<group>"; };
+		B970BFF312BB66CD00C57946 /* AcOCUiControlsIBPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcOCUiControlsIBPlugin.m; sourceTree = "<group>"; };
+		B98E6ADC12AE294A00004602 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98E6B1512AE2B7C00004602 /* TestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
+		B98E6B1612AE2B7C00004602 /* TestAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = TestAppDelegate.mm; sourceTree = "<group>"; };
+		B98E6B1A12AE2CCF00004602 /* TestApp_Info.plist */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.plist.xml; path = TestApp_Info.plist; sourceTree = "<group>"; };
+		B98E6B2312AE2D7500004602 /* TestApp.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TestApp.xcconfig; sourceTree = "<group>"; };
+		B98E6B4812AE2E1300004602 /* main.m */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B98E6B6912AE2E6E00004602 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/TestApp.xib; sourceTree = "<group>"; };
+		B9A3B37812AC8C6D00F1B706 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B9B5440412E961DD00402364 /* AcOCUiComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiComboBox.h; sourceTree = "<group>"; };
+		B9B5440512E961DD00402364 /* AcOCUiComboBox.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiComboBox.mm; sourceTree = "<group>"; };
+		B9B5442812E96C3300402364 /* AcOCUiControls.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiControls.pch; sourceTree = "<group>"; };
+		B9B5543A12E99AE7009756CB /* AcOCUiAutoCompleteDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiAutoCompleteDataSource.h; sourceTree = "<group>"; };
+		B9B5543B12E99AE7009756CB /* AcOCUiComboBoxPopupButtonBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiComboBoxPopupButtonBridge.mm; sourceTree = "<group>"; };
+		B9B82BCE12E443B700617687 /* AcOCUiWindow.mm */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiWindow.mm; sourceTree = SOURCE_ROOT; };
+		B9B82BCF12E443B700617687 /* AcOCUiWindow.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCUiWindow.h; sourceTree = SOURCE_ROOT; };
+		B9C113E712A90160008139A9 /* flyout_button_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flyout_button_overlay.png; path = Resources/flyout_button_overlay.png; sourceTree = "<group>"; };
+		B9F8C21912F65D2C00A1D486 /* AcOCUiCommandMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiCommandMenuItem.h; sourceTree = "<group>"; };
+		B9F8C21A12F65D2C00A1D486 /* AcOCUiCommandMenuItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiCommandMenuItem.mm; sourceTree = "<group>"; };
+		B9F8DE4612F79F5300A1D486 /* AcOCUiComboBoxPopupButtonBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiComboBoxPopupButtonBridge.h; sourceTree = "<group>"; };
+		B9FE3F04130B95F000140322 /* AcOCLayoutFrame.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCLayoutFrame.h; sourceTree = "<group>"; };
+		B9FE3F05130B95F000140322 /* AcOCLayoutFrame.m */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.objc; path = AcOCLayoutFrame.m; sourceTree = "<group>"; };
+		B9FE3F06130B95F000140322 /* AcOCLayoutFrameHost.h */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.h; path = AcOCLayoutFrameHost.h; sourceTree = "<group>"; };
+		B9FE3F07130B95F000140322 /* AcOCLayoutFrameHost.m */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = sourcecode.c.objc; path = AcOCLayoutFrameHost.m; sourceTree = "<group>"; };
+		C044829E0C3328F4006E818F /* AcOCUiControlsViewIntegration.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AcOCUiControlsViewIntegration.m; sourceTree = "<group>"; };
+		C05B20D80A48CB530099B9E5 /* AcOCUiControlsInspector.xib */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = file.xib; name = AcOCUiControlsInspector.xib; path = English.lproj/AcOCUiControlsInspector.xib; sourceTree = "<group>"; };
+		C0D069550A49DF9100C95564 /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = /Developer/Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = "<absolute>"; };
+		D1AEDE460A6C289C0010C343 /* AcOCUiControlsLibrary.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = AcOCUiControlsLibrary.nib; path = English.lproj/AcOCUiControlsLibrary.nib; sourceTree = "<group>"; };
+		DAB9EE66137BAF1400EF8633 /* AcOCUiVisorCloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiVisorCloseButton.h; sourceTree = "<group>"; };
+		DAB9EE68137BAF1A00EF8633 /* AcOCUiVisorCloseButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiVisorCloseButton.mm; sourceTree = "<group>"; };
+		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		EA6A903D1339FA1D008A5257 /* AcOCUiRuleEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiRuleEditor.h; sourceTree = "<group>"; };
+		EA6A903E1339FA1D008A5257 /* AcOCUiRuleEditor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiRuleEditor.mm; sourceTree = "<group>"; };
+		EA6A903F1339FA1D008A5257 /* AcOCUiRuleEditorViewSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiRuleEditorViewSlice.h; sourceTree = "<group>"; };
+		EA6A90401339FA1D008A5257 /* AcOCUiRuleEditorViewSlice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiRuleEditorViewSlice.mm; sourceTree = "<group>"; };
+		EA6A90411339FA1D008A5257 /* AcOCUiRuleEditorViewSliceRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiRuleEditorViewSliceRow.h; sourceTree = "<group>"; };
+		EA6A90421339FA1D008A5257 /* AcOCUiRuleEditorViewSliceRow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiRuleEditorViewSliceRow.mm; sourceTree = "<group>"; };
+		EA6A90431339FA1D008A5257 /* AcOCUiRuleEditorViewSliceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiRuleEditorViewSliceHolder.h; sourceTree = "<group>"; };
+		EA6A90441339FA1D008A5257 /* AcOCUiRuleEditorViewSliceHolder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiRuleEditorViewSliceHolder.mm; sourceTree = "<group>"; };
+		EA6A90451339FA1D008A5257 /* AcOCUiRuleEditorCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiRuleEditorCache.h; sourceTree = "<group>"; };
+		EA6A90461339FA1D008A5257 /* AcOCUiRuleEditorCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiRuleEditorCache.mm; sourceTree = "<group>"; };
+		EA6A90471339FA1D008A5257 /* AcOCUiRuleEditorViewUnboundRowHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiRuleEditorViewUnboundRowHolder.h; sourceTree = "<group>"; };
+		EA6A90481339FA1D008A5257 /* AcOCUiRuleEditorViewUnboundRowHolder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiRuleEditorViewUnboundRowHolder.mm; sourceTree = "<group>"; };
+		F71CF19F13035A81008FBB35 /* AcOCUiAutoCompleteMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiAutoCompleteMenuController.h; sourceTree = SOURCE_ROOT; };
+		F71CF1A013035A81008FBB35 /* AcOCUiAutoCompleteMenuController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiAutoCompleteMenuController.mm; sourceTree = SOURCE_ROOT; };
+		F7F9EAD412F2104500D8AC69 /* AcOCUiAutoCompleteTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcOCUiAutoCompleteTextView.h; sourceTree = "<group>"; };
+		F7F9EAD512F2104500D8AC69 /* AcOCUiAutoCompleteTextView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AcOCUiAutoCompleteTextView.mm; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53DF68FB067E5B5A0090B5B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F8B89007B43554008AE28D /* Cocoa.framework in Frameworks */,
+				B95D62FC130CFD1900E86587 /* AcTheme.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC96E0486D14A00FE50C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
+				546DEAF3067F632A0098DCC4 /* AcOCUiControls.framework in Frameworks */,
+				C0D069560A49DF9100C95564 /* InterfaceBuilderKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98E6ADA12AE294A00004602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B95D63ED130D10A800E86587 /* AcTheme.framework in Frameworks */,
+				B98E6AE412AE295A00004602 /* AcOCUiControls.framework in Frameworks */,
+				B98E6B5012AE2E3200004602 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0259C574FE90428111CA0C5A /* AcOCUiControls */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6C5312A8C9170093F792 /* Configuration */,
+				32DBCF9E0370C38000C91783 /* IBPlugin */,
+				54D33B2C06778E4400C9C163 /* AcOCUiControlsFramework */,
+				B98E6B0812AE2AED00004602 /* TestApp */,
+				1ED78706FE9D4A0611CA0C5A /* Products */,
+			);
+			name = AcOCUiControls;
+			sourceTree = "<group>";
+		};
+		0259C582FE90428111CA0C5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9C1144612A905F0008139A9 /* Images */,
+				8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */,
+				B9A3B37812AC8C6D00F1B706 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		131E8FE8067F80F40006E0CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1AEDE460A6C289C0010C343 /* AcOCUiControlsLibrary.nib */,
+				C05B20D80A48CB530099B9E5 /* AcOCUiControlsInspector.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		13F8B6FD07B43410008AE28D /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
+				C0D069550A49DF9100C95564 /* InterfaceBuilderKit.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		13F8B70407B43425008AE28D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13F8B88807B434F6008AE28D /* AppKit.framework */,
+				13F8B88907B434F6008AE28D /* CoreData.framework */,
+				13F8B88A07B434F6008AE28D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1ED78706FE9D4A0611CA0C5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1AC9740486D14A00FE50C9 /* AcOCUiControls.ibplugin */,
+				53DF68FD067E5B5A0090B5B0 /* AcOCUiControls.framework */,
+				B98E6ADC12AE294A00004602 /* TestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BDF6FF21338898700EB63AD /* CompositeCell */ = {
+			isa = PBXGroup;
+			children = (
+				2BDF73AF1339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.h */,
+				2BDF73B01339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.mm */,
+			);
+			name = CompositeCell;
+			sourceTree = "<group>";
+		};
+		2E58F364FFB232C311CA0CBA /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B95D62EB130CFD0600E86587 /* AcTheme.xcodeproj */,
+				13F8B6FD07B43410008AE28D /* Linked Frameworks */,
+				13F8B70407B43425008AE28D /* Other Frameworks */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		32DBCF9E0370C38000C91783 /* IBPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				54D33B2406778DD400C9C163 /* Class Descriptions */,
+				54D33B2506778DF000C9C163 /* Classes */,
+				32DBCF9F0370C38200C91783 /* Other Sources */,
+				131E8FE8067F80F40006E0CE /* Resources */,
+			);
+			name = IBPlugin;
+			sourceTree = "<group>";
+		};
+		32DBCF9F0370C38200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C044829E0C3328F4006E818F /* AcOCUiControlsViewIntegration.m */,
+				32DBCF980370C29C00C91783 /* AcOCUiControls_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		54D33B2406778DD400C9C163 /* Class Descriptions */ = {
+			isa = PBXGroup;
+			children = (
+				54D33B2806778E3300C9C163 /* AcOCUiControlsView.classdescription */,
+			);
+			name = "Class Descriptions";
+			sourceTree = "<group>";
+		};
+		54D33B2506778DF000C9C163 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B97040E112B07B2F001F8F8A /* AcOCUiControlsView.h */,
+				B97040E212B07B2F001F8F8A /* AcOCUiControlsView.m */,
+				0259C57BFE90428111CA0C5A /* AcOCUiControlsInspector.h */,
+				0259C577FE90428111CA0C5A /* AcOCUiControlsInspector.m */,
+				B970BFF212BB66CD00C57946 /* AcOCUiControlsIBPlugin.h */,
+				B970BFF312BB66CD00C57946 /* AcOCUiControlsIBPlugin.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		54D33B2C06778E4400C9C163 /* AcOCUiControlsFramework */ = {
+			isa = PBXGroup;
+			children = (
+				0259C57AFE90428111CA0C5A /* AcOCUiControls.h */,
+				0259C576FE90428111CA0C5A /* AcOCUiControls.m */,
+				B970BE5712BB41DC00C57946 /* Protocols */,
+				B90F6CC212A8C9E90093F792 /* StylesAndTheme */,
+				B9C69BB51309057F00D7D110 /* Layout */,
+				B90F6C7212A8C9E90093F792 /* Controls */,
+				B9B82BCD12E4439400617687 /* Windows */,
+				C0894DA40C32F4C100401507 /* Utilities */,
+				0259C582FE90428111CA0C5A /* Resources */,
+			);
+			name = AcOCUiControlsFramework;
+			sourceTree = "<group>";
+		};
+		B90F6C5312A8C9170093F792 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2E58F364FFB232C311CA0CBA /* Dependencies */,
+				B90F6C5812A8C9170093F792 /* AcOCUiControls.xcconfig */,
+				B90F6C5412A8C9170093F792 /* Project */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		B90F6C5412A8C9170093F792 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				B95D633A130CFDCF00E86587 /* DebugAcadProjectTWAE.xcconfig */,
+				B95D633B130CFDCF00E86587 /* ReleaseAcadProjectTWAE.xcconfig */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		B90F6C7212A8C9E90093F792 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A903C1339FA1D008A5257 /* RuleEditorControl */,
+				2BDF6FF21338898700EB63AD /* CompositeCell */,
+				B93744BF1337075E00139912 /* ComplexControls */,
+				F714EF2C12FCBE1E0040F001 /* AutoComplete */,
+				B9FDB2A61308C98E007CF29F /* Box */,
+				B90F6C8112A8C9E90093F792 /* Button */,
+				B924FE8912E7DFDA00682C19 /* ComboBox */,
+				B90F6C9912A8C9E90093F792 /* FlyoutButton */,
+				B90F6C9C12A8C9E90093F792 /* Menu */,
+				B90F6CA912A8C9E90093F792 /* PopupButton */,
+				B93FBD3E12DECDD10063092A /* Scroller */,
+				B90F6CAE12A8C9E90093F792 /* SegmentedControl */,
+				B90F6CB612A8C9E90093F792 /* Separators */,
+				B9FDB2A71308C99E007CF29F /* Slider */,
+				B90F6CB312A8C9E90093F792 /* TableView */,
+				B90F6C9212A8C9E90093F792 /* TextField */,
+				B90F6C7B12A8C9E90093F792 /* AcOCUiTabBarView.h */,
+				B90F6C7C12A8C9E90093F792 /* AcOCUiTabBarView.mm */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		B90F6C8112A8C9E90093F792 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6C8212A8C9E90093F792 /* AcOCUiButton.h */,
+				B90F6C8312A8C9E90093F792 /* AcOCUiButton.mm */,
+				B90F6C8412A8C9E90093F792 /* AcOCUiButtonCell.h */,
+				B90F6C8512A8C9E90093F792 /* AcOCUiButtonCell.mm */,
+				B9703D7D12AF6734001F8F8A /* AcOCUiOptionButtonCell.h */,
+				B9703D7E12AF6734001F8F8A /* AcOCUiOptionButtonCell.mm */,
+				B9703D6612AF6363001F8F8A /* AcOCUiCheckBoxCell.h */,
+				B9703D6712AF6363001F8F8A /* AcOCUiCheckBoxCell.mm */,
+				B9703D8112AF6765001F8F8A /* AcOCUiRadioButtonCell.h */,
+				B9703D8212AF6765001F8F8A /* AcOCUiRadioButtonCell.mm */,
+				B9703D8512AF6790001F8F8A /* AcOCUiTabButtonCell.h */,
+				B9703D8612AF6790001F8F8A /* AcOCUiTabButtonCell.mm */,
+				B90F6C8612A8C9E90093F792 /* AcOCUiRolloverImageButton.h */,
+				B90F6C8712A8C9E90093F792 /* AcOCUiRolloverImageButton.mm */,
+				B90F6C8812A8C9E90093F792 /* AcOCUiLockButton.h */,
+				B90F6C8912A8C9E90093F792 /* AcOCUiLockButton.mm */,
+				B90F6C8A12A8C9E90093F792 /* AcOCUiScrollButton.h */,
+				B90F6C8B12A8C9E90093F792 /* AcOCUiScrollButton.mm */,
+				DAB9EE66137BAF1400EF8633 /* AcOCUiVisorCloseButton.h */,
+				DAB9EE68137BAF1A00EF8633 /* AcOCUiVisorCloseButton.mm */,
+				B90F6C8C12A8C9E90093F792 /* AcOCUiDisclosureButton.h */,
+				B90F6C8D12A8C9E90093F792 /* AcOCUiDisclosureButton.mm */,
+				B90F6C8E12A8C9E90093F792 /* AcOCUiSquareButton.h */,
+				B90F6C8F12A8C9E90093F792 /* AcOCUiSquareButton.mm */,
+				B90F6C9012A8C9E90093F792 /* AcOCUiStepperCell.h */,
+				B90F6C9112A8C9E90093F792 /* AcOCUiStepperCell.mm */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		B90F6C9212A8C9E90093F792 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6C9312A8C9E90093F792 /* AcOCUiTextFieldCell.h */,
+				B90F6C9412A8C9E90093F792 /* AcOCUiTextFieldCell.mm */,
+				B90F6C9512A8C9E90093F792 /* AcOCTextFieldEditor.h */,
+				B90F6C9612A8C9E90093F792 /* AcOCUiTextFieldEditor.mm */,
+				B90F6C9712A8C9E90093F792 /* AcOCUiTextLabelCell.h */,
+				B90F6C9812A8C9E90093F792 /* AcOCUiTextLabelCell.mm */,
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
+		B90F6C9912A8C9E90093F792 /* FlyoutButton */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6C9A12A8C9E90093F792 /* AcOCUiFlyoutButton.h */,
+				B90F6C9B12A8C9E90093F792 /* AcOCUiFlyoutButton.mm */,
+			);
+			name = FlyoutButton;
+			sourceTree = "<group>";
+		};
+		B90F6C9C12A8C9E90093F792 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6C9D12A8C9E90093F792 /* AcOCUiMenuItemCell.h */,
+				B90F6C9E12A8C9E90093F792 /* AcOCUiMenuItemCell.mm */,
+				B90F6CA112A8C9E90093F792 /* AcOCUiFlyoutMenu.h */,
+				B90F6CA212A8C9E90093F792 /* AcOCUiFlyoutMenu.mm */,
+				B90F6CA312A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.h */,
+				B90F6CA412A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.mm */,
+				B90F6CA512A8C9E90093F792 /* AcOCUiFlyoutWindowController.h */,
+				B90F6CA612A8C9E90093F792 /* AcOCUiFlyoutWindowController.mm */,
+				B90F6CA712A8C9E90093F792 /* AcOCUiFlyoutWindow.h */,
+				B90F6CA812A8C9E90093F792 /* AcOCUiFlyoutWindow.mm */,
+				B9F8C21912F65D2C00A1D486 /* AcOCUiCommandMenuItem.h */,
+				B9F8C21A12F65D2C00A1D486 /* AcOCUiCommandMenuItem.mm */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		B90F6CA912A8C9E90093F792 /* PopupButton */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6CAA12A8C9E90093F792 /* AcOCUiBinder.h */,
+				B90F6CAB12A8C9E90093F792 /* AcOCUiBinder.mm */,
+				B90F6CAC12A8C9E90093F792 /* AcOCUiPopupButton.h */,
+				B90F6CAD12A8C9E90093F792 /* AcOCUiPopupButton.mm */,
+				B951CFD912B9FA1C00820148 /* AcOCUiPopupButtonCell.h */,
+				B951CFDA12B9FA1C00820148 /* AcOCUiPopupButtonCell.mm */,
+				26C40CBC132E269300AF84AB /* AcOCUiPopupButtonItem.h */,
+				26C40CBF132E26A000AF84AB /* AcOCUiPopupButtonItem.mm */,
+			);
+			name = PopupButton;
+			sourceTree = "<group>";
+		};
+		B90F6CAE12A8C9E90093F792 /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6CAF12A8C9E90093F792 /* AcOCUiSegmentedControl.h */,
+				B90F6CB012A8C9E90093F792 /* AcOCUiSegmentedControl.mm */,
+				B90F6CB112A8C9E90093F792 /* AcOCUiSegmentedCell.h */,
+				B90F6CB212A8C9E90093F792 /* AcOCUiSegmentedCell.mm */,
+			);
+			name = SegmentedControl;
+			sourceTree = "<group>";
+		};
+		B90F6CB312A8C9E90093F792 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6CB412A8C9E90093F792 /* AcOCUiTableView.h */,
+				B90F6CB512A8C9E90093F792 /* AcOCUiTableView.mm */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		B90F6CB612A8C9E90093F792 /* Separators */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6CB712A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.h */,
+				B90F6CB812A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.mm */,
+				B90F6CB912A8C9E90093F792 /* AcOCUiSeparator.h */,
+				B90F6CBA12A8C9E90093F792 /* AcOCUiSeparator.mm */,
+				B90F6CBB12A8C9E90093F792 /* AcOCUiPaletteSeparator.h */,
+				B90F6CBC12A8C9E90093F792 /* AcOCUiPaletteSeparator.mm */,
+			);
+			name = Separators;
+			sourceTree = "<group>";
+		};
+		B90F6CBD12A8C9E90093F792 /* OverlayPanel */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6CBE12A8C9E90093F792 /* AcOCUiOverlayPanel.h */,
+				B90F6CBF12A8C9E90093F792 /* AcOCUiOverlayPanel.mm */,
+				B90F6CC012A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.h */,
+				B90F6CC112A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.mm */,
+			);
+			name = OverlayPanel;
+			sourceTree = "<group>";
+		};
+		B90F6CC212A8C9E90093F792 /* StylesAndTheme */ = {
+			isa = PBXGroup;
+			children = (
+				B970BE5912BB427800C57946 /* AcOCUiThemeOverride.h */,
+				B970BE9C12BB4F6B00C57946 /* AcOCUiThemeOverride.mm */,
+				B90F6CC312A8C9E90093F792 /* AcOCUiTheme.h */,
+				B90F6CC412A8C9E90093F792 /* AcOCUiTheme.mm */,
+				B90F6CC512A8C9E90093F792 /* AcOCStylizer.h */,
+				B90F6CC612A8C9E90093F792 /* AcOCStylizer.mm */,
+				B90F6CC712A8C9E90093F792 /* AcControlProvider.h */,
+				B90F6CC812A8C9E90093F792 /* AcControlStylizer.h */,
+				B90F6CC912A8C9E90093F792 /* AcControlStylizer.mm */,
+				B90F6CCA12A8C9E90093F792 /* AcOCUiTextAttributes.h */,
+				B90F6CCB12A8C9E90093F792 /* AcOCUiTextAttributes.mm */,
+			);
+			name = StylesAndTheme;
+			sourceTree = "<group>";
+		};
+		B924FE8912E7DFDA00682C19 /* ComboBox */ = {
+			isa = PBXGroup;
+			children = (
+				B9B5440412E961DD00402364 /* AcOCUiComboBox.h */,
+				B9B5440512E961DD00402364 /* AcOCUiComboBox.mm */,
+				B9B5543A12E99AE7009756CB /* AcOCUiAutoCompleteDataSource.h */,
+				B9F8DE4612F79F5300A1D486 /* AcOCUiComboBoxPopupButtonBridge.h */,
+				B9B5543B12E99AE7009756CB /* AcOCUiComboBoxPopupButtonBridge.mm */,
+			);
+			name = ComboBox;
+			sourceTree = "<group>";
+		};
+		B93744BF1337075E00139912 /* ComplexControls */ = {
+			isa = PBXGroup;
+			children = (
+				B93744C31337078A00139912 /* AcOCUiComplexTextField.h */,
+				B93744C41337078A00139912 /* AcOCUiComplexTextField.mm */,
+				B93744C51337078A00139912 /* AcOCUiTextFieldWithButton.h */,
+				B93744C61337078A00139912 /* AcOCUiTextFieldWithButton.mm */,
+				B93744C71337078A00139912 /* AcOCUiTextFieldWithCircularSlider.h */,
+				B93744C81337078A00139912 /* AcOCUiTextFieldWithCircularSlider.mm */,
+				B93744C91337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.h */,
+				B93744CA1337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.mm */,
+				B93744CB1337078A00139912 /* AcOCUiTextFieldWithStepper.h */,
+				B93744CC1337078A00139912 /* AcOCUiTextFieldWithStepper.mm */,
+				B90F6C7D12A8C9E90093F792 /* AcOCUiMatrixCell.h */,
+				B90F6C7E12A8C9E90093F792 /* AcOCUiMatrixCell.mm */,
+				B90F6C7F12A8C9E90093F792 /* AcOCUiComplexCellLayout.h */,
+				B90F6C8012A8C9E90093F792 /* AcOCUiComplexCellLayout.mm */,
+			);
+			name = ComplexControls;
+			sourceTree = "<group>";
+		};
+		B93FBD3E12DECDD10063092A /* Scroller */ = {
+			isa = PBXGroup;
+			children = (
+				B93FBD3F12DECDF00063092A /* AcOCUiScroller.h */,
+				B93FBD4012DECDF00063092A /* AcOCUiScroller.mm */,
+			);
+			name = Scroller;
+			sourceTree = "<group>";
+		};
+		B95D62EC130CFD0600E86587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B95D62F8130CFD0600E86587 /* AcTheme.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B970BE5712BB41DC00C57946 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6C6E12A8C9E90093F792 /* AcOCCanResignKeyWindow.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B970BFB012BB5D4A00C57946 /* HHAssociatedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B970BFB112BB5D6300C57946 /* NSObject+HHAssociatedObjects.h */,
+				B970BFB212BB5D6300C57946 /* NSObject+HHAssociatedObjects.m */,
+			);
+			name = HHAssociatedObjects;
+			sourceTree = "<group>";
+		};
+		B98E6B0812AE2AED00004602 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				2BDF7018133893DD00EB63AD /* TestTreeNode.h */,
+				2BDF7019133893DD00EB63AD /* TestTreeNode.mm */,
+				B93FBD8C12DED5830063092A /* TestScrollView.h */,
+				B93FBD8D12DED5830063092A /* TestScrollView.m */,
+				B98E6B4812AE2E1300004602 /* main.m */,
+				B98E6B1512AE2B7C00004602 /* TestAppDelegate.h */,
+				B98E6B1612AE2B7C00004602 /* TestAppDelegate.mm */,
+				B98E6B1A12AE2CCF00004602 /* TestApp_Info.plist */,
+				B98E6B2312AE2D7500004602 /* TestApp.xcconfig */,
+				B98E6B6812AE2E6E00004602 /* TestApp.xib */,
+				B96CB2F8133C9B0F0071AF8C /* TestView.h */,
+				B96CB2F9133C9B0F0071AF8C /* TestView.mm */,
+			);
+			name = TestApp;
+			sourceTree = "<group>";
+		};
+		B9B82BCD12E4439400617687 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6CBD12A8C9E90093F792 /* OverlayPanel */,
+				B90F6C9F12A8C9E90093F792 /* AcOCUiMenuOverlayWindow.h */,
+				B90F6CA012A8C9E90093F792 /* AcOCUiMenuOverlayWindow.mm */,
+				B9B82BCE12E443B700617687 /* AcOCUiWindow.mm */,
+				B9B82BCF12E443B700617687 /* AcOCUiWindow.h */,
+			);
+			name = Windows;
+			sourceTree = "<group>";
+		};
+		B9C1144612A905F0008139A9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B9C1168112A90961008139A9 /* Invariant */,
+				B9C1168012A9095D008139A9 /* Light */,
+				B9C1167F12A90958008139A9 /* Dark */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B9C1167F12A90958008139A9 /* Dark */ = {
+			isa = PBXGroup;
+			children = (
+				B90109DE130BDE2E007FC1CC /* Dark_Checkbox_Mixed_Hover.png */,
+				B90109DF130BDE2E007FC1CC /* Dark_Checkbox_Mixed.png */,
+				B90109E0130BDE2E007FC1CC /* Dark_Checkbox_Off_Hover.png */,
+				B90109E1130BDE2E007FC1CC /* Dark_Checkbox_Off.png */,
+				B90109E2130BDE2E007FC1CC /* Dark_Checkbox_On_Hover.png */,
+				B90109E3130BDE2E007FC1CC /* Dark_Checkbox_On.png */,
+				B90109E4130BDE2E007FC1CC /* Dark_collapse_down_hover.png */,
+				B90109E5130BDE2E007FC1CC /* Dark_collapse_down_idle.png */,
+				B90109E6130BDE2E007FC1CC /* Dark_collapse_up_hover.png */,
+				B90109E7130BDE2E007FC1CC /* Dark_collapse_up_idle.png */,
+				B90109E8130BDE2E007FC1CC /* Dark_lock_closed_hover_12.png */,
+				B90109E9130BDE2E007FC1CC /* Dark_lock_closed_idle_12.png */,
+				B90109EA130BDE2E007FC1CC /* Dark_lock_open_hover_12.png */,
+				B90109EB130BDE2E007FC1CC /* Dark_lock_open_idle_12.png */,
+				B90109EC130BDE2E007FC1CC /* Dark_Menu_Check.png */,
+				B90109ED130BDE2E007FC1CC /* Dark_Radio_Mixed_Hover.png */,
+				B90109EE130BDE2E007FC1CC /* Dark_Radio_Mixed.png */,
+				B90109EF130BDE2E007FC1CC /* Dark_Radio_Off_Hover.png */,
+				B90109F0130BDE2E007FC1CC /* Dark_Radio_Off.png */,
+				B90109F1130BDE2E007FC1CC /* Dark_Radio_On_Hover.png */,
+				B90109F2130BDE2E007FC1CC /* Dark_Radio_On.png */,
+				B90109F3130BDE2E007FC1CC /* Dark_scroll_down_triangle.png */,
+				B90109F4130BDE2E007FC1CC /* Dark_scroll_left_triangle_hover.png */,
+				B90109F5130BDE2E007FC1CC /* Dark_scroll_left_triangle.png */,
+				B90109F6130BDE2E007FC1CC /* Dark_scroll_right_triangle_hover.png */,
+				B90109F7130BDE2E007FC1CC /* Dark_scroll_right_triangle.png */,
+				B90109F8130BDE2E007FC1CC /* Dark_scroll_up_triangle.png */,
+			);
+			name = Dark;
+			sourceTree = "<group>";
+		};
+		B9C1168012A9095D008139A9 /* Light */ = {
+			isa = PBXGroup;
+			children = (
+				B9010A14130BDE39007FC1CC /* Light_Checkbox_Mixed_Hover.png */,
+				B9010A15130BDE39007FC1CC /* Light_Checkbox_Mixed.png */,
+				B9010A16130BDE39007FC1CC /* Light_Checkbox_Off_Hover.png */,
+				B9010A17130BDE39007FC1CC /* Light_Checkbox_Off.png */,
+				B9010A18130BDE39007FC1CC /* Light_Checkbox_On_Hover.png */,
+				B9010A19130BDE39007FC1CC /* Light_Checkbox_On.png */,
+				B9010A1A130BDE39007FC1CC /* Light_collapse_down_hover.png */,
+				B9010A1B130BDE39007FC1CC /* Light_collapse_down_idle.png */,
+				B9010A1C130BDE39007FC1CC /* Light_collapse_up_hover.png */,
+				B9010A1D130BDE39007FC1CC /* Light_collapse_up_idle.png */,
+				B9010A1E130BDE39007FC1CC /* Light_lock_closed_hover_12.png */,
+				B9010A1F130BDE39007FC1CC /* Light_lock_closed_idle_12.png */,
+				B9010A20130BDE39007FC1CC /* Light_lock_open_hover_12.png */,
+				B9010A21130BDE39007FC1CC /* Light_lock_open_idle_12.png */,
+				B9010A22130BDE39007FC1CC /* Light_Menu_Check.png */,
+				B9010A23130BDE39007FC1CC /* Light_Radio_Off_Hover.png */,
+				B9010A24130BDE39007FC1CC /* Light_Radio_Off.png */,
+				B9010A25130BDE39007FC1CC /* Light_Radio_On_Hover.png */,
+				B9010A26130BDE39007FC1CC /* Light_Radio_On.png */,
+				B9010A27130BDE39007FC1CC /* Light_scroll_down_triangle.png */,
+				B9010A28130BDE39007FC1CC /* Light_scroll_left_triangle_hover.png */,
+				B9010A29130BDE39007FC1CC /* Light_scroll_left_triangle.png */,
+				B9010A2A130BDE39007FC1CC /* Light_scroll_right_triangle_hover.png */,
+				B9010A2B130BDE39007FC1CC /* Light_scroll_right_triangle.png */,
+				B9010A2C130BDE39007FC1CC /* Light_scroll_up_triangle.png */,
+			);
+			name = Light;
+			sourceTree = "<group>";
+		};
+		B9C1168112A90961008139A9 /* Invariant */ = {
+			isa = PBXGroup;
+			children = (
+				84254B5613723DEF00E0D322 /* RuleEditor_Add_Compound.png */,
+				84254B5713723DEF00E0D322 /* RuleEditor_Add_Simple.png */,
+				84254B5813723DEF00E0D322 /* RuleEditor_Remove.png */,
+				B9C113E712A90160008139A9 /* flyout_button_overlay.png */,
+				B90109D5130BDE16007FC1CC /* scroll_down_triangle_hover.png */,
+				B90109D6130BDE16007FC1CC /* scroll_left_triangle_hover.png */,
+				B90109D7130BDE16007FC1CC /* scroll_right_triangle_hover.png */,
+				B90109D8130BDE16007FC1CC /* scroll_up_triangle_hover.png */,
+			);
+			name = Invariant;
+			sourceTree = "<group>";
+		};
+		B9C69BB51309057F00D7D110 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				B9FE3F04130B95F000140322 /* AcOCLayoutFrame.h */,
+				B9FE3F05130B95F000140322 /* AcOCLayoutFrame.m */,
+				B9FE3F06130B95F000140322 /* AcOCLayoutFrameHost.h */,
+				B9FE3F07130B95F000140322 /* AcOCLayoutFrameHost.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		B9FDB2A51308C8D8007CF29F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6C7512A8C9E90093F792 /* AcOCUiNSCell.h */,
+				B90F6C7612A8C9E90093F792 /* AcOCUiNSCell.mm */,
+				B90F6D2B12A8CA210093F792 /* NSString+AcOCStringUtils.mm */,
+				B90F6D2C12A8CA210093F792 /* NSImage+AcOCUiAdditions.mm */,
+				B95108261306950400BDF105 /* NSText+NSTextDelegateEx.h */,
+				B95108251306950400BDF105 /* NSText+NSTextDelegateEx.mm */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B9FDB2A61308C98E007CF29F /* Box */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6C7712A8C9E90093F792 /* AcOCUiBox.h */,
+				B90F6C7812A8C9E90093F792 /* AcOCUiBox.mm */,
+			);
+			name = Box;
+			sourceTree = "<group>";
+		};
+		B9FDB2A71308C99E007CF29F /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6C7912A8C9E90093F792 /* AcOCUiSliderCell.h */,
+				B90F6C7A12A8C9E90093F792 /* AcOCUiSliderCell.mm */,
+			);
+			name = Slider;
+			sourceTree = "<group>";
+		};
+		C0894DA40C32F4C100401507 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B9FDB2A51308C8D8007CF29F /* Categories */,
+				B970BFB012BB5D4A00C57946 /* HHAssociatedObjects */,
+				B9B5442812E96C3300402364 /* AcOCUiControls.pch */,
+				3D03F20712AEDCB800407022 /* AcOCUiControls_Utils.h */,
+				3D03F20812AEDCB800407022 /* AcOCUiControls_Utils.mm */,
+				B90F6C6F12A8C9E90093F792 /* diagnostic.cpp */,
+				B9703E7712AF7D35001F8F8A /* FrameworkInit.mm */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		EA6A903C1339FA1D008A5257 /* RuleEditorControl */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A903D1339FA1D008A5257 /* AcOCUiRuleEditor.h */,
+				EA6A903E1339FA1D008A5257 /* AcOCUiRuleEditor.mm */,
+				EA6A903F1339FA1D008A5257 /* AcOCUiRuleEditorViewSlice.h */,
+				EA6A90401339FA1D008A5257 /* AcOCUiRuleEditorViewSlice.mm */,
+				EA6A90411339FA1D008A5257 /* AcOCUiRuleEditorViewSliceRow.h */,
+				EA6A90421339FA1D008A5257 /* AcOCUiRuleEditorViewSliceRow.mm */,
+				EA6A90431339FA1D008A5257 /* AcOCUiRuleEditorViewSliceHolder.h */,
+				EA6A90441339FA1D008A5257 /* AcOCUiRuleEditorViewSliceHolder.mm */,
+				EA6A90451339FA1D008A5257 /* AcOCUiRuleEditorCache.h */,
+				EA6A90461339FA1D008A5257 /* AcOCUiRuleEditorCache.mm */,
+				EA6A90471339FA1D008A5257 /* AcOCUiRuleEditorViewUnboundRowHolder.h */,
+				EA6A90481339FA1D008A5257 /* AcOCUiRuleEditorViewUnboundRowHolder.mm */,
+			);
+			name = RuleEditorControl;
+			sourceTree = "<group>";
+		};
+		F714EF2C12FCBE1E0040F001 /* AutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				F7F9EAD412F2104500D8AC69 /* AcOCUiAutoCompleteTextView.h */,
+				F7F9EAD512F2104500D8AC69 /* AcOCUiAutoCompleteTextView.mm */,
+				F71CF19F13035A81008FBB35 /* AcOCUiAutoCompleteMenuController.h */,
+				F71CF1A013035A81008FBB35 /* AcOCUiAutoCompleteMenuController.mm */,
+			);
+			name = AutoComplete;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		53DF68F8067E5B5A0090B5B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F9EAD712F2104500D8AC69 /* AcOCUiAutoCompleteTextView.h in Headers */,
+				B90F6CCC12A8C9E90093F792 /* AcOCCanResignKeyWindow.h in Headers */,
+				B90F6CD212A8C9E90093F792 /* AcOCUiNSCell.h in Headers */,
+				B90F6CD412A8C9E90093F792 /* AcOCUiBox.h in Headers */,
+				B90F6CD612A8C9E90093F792 /* AcOCUiSliderCell.h in Headers */,
+				B90F6CD812A8C9E90093F792 /* AcOCUiTabBarView.h in Headers */,
+				B90F6CDA12A8C9E90093F792 /* AcOCUiMatrixCell.h in Headers */,
+				B90F6CDC12A8C9E90093F792 /* AcOCUiComplexCellLayout.h in Headers */,
+				B90F6CDE12A8C9E90093F792 /* AcOCUiButton.h in Headers */,
+				EAFF5374133B3E99009D9B78 /* AcOCUiRuleEditor.h in Headers */,
+				EAFF5375133B3E99009D9B78 /* AcOCUiRuleEditorViewSlice.h in Headers */,
+				EAFF5376133B3E99009D9B78 /* AcOCUiRuleEditorViewSliceRow.h in Headers */,
+				EAFF5377133B3E99009D9B78 /* AcOCUiRuleEditorViewSliceHolder.h in Headers */,
+				EAFF5378133B3E99009D9B78 /* AcOCUiRuleEditorCache.h in Headers */,
+				EAFF5379133B3E99009D9B78 /* AcOCUiRuleEditorViewUnboundRowHolder.h in Headers */,
+				B90F6CE012A8C9E90093F792 /* AcOCUiButtonCell.h in Headers */,
+				B90F6CE212A8C9E90093F792 /* AcOCUiRolloverImageButton.h in Headers */,
+				B90F6CE412A8C9E90093F792 /* AcOCUiLockButton.h in Headers */,
+				B90F6CE612A8C9E90093F792 /* AcOCUiScrollButton.h in Headers */,
+				B90F6CE812A8C9E90093F792 /* AcOCUiDisclosureButton.h in Headers */,
+				B90F6CEA12A8C9E90093F792 /* AcOCUiSquareButton.h in Headers */,
+				B90F6CEC12A8C9E90093F792 /* AcOCUiStepperCell.h in Headers */,
+				B90F6CEE12A8C9E90093F792 /* AcOCUiTextFieldCell.h in Headers */,
+				B90F6CF012A8C9E90093F792 /* AcOCTextFieldEditor.h in Headers */,
+				B90F6CF212A8C9E90093F792 /* AcOCUiTextLabelCell.h in Headers */,
+				B90F6CF412A8C9E90093F792 /* AcOCUiFlyoutButton.h in Headers */,
+				B90F6CF612A8C9E90093F792 /* AcOCUiMenuItemCell.h in Headers */,
+				B90F6CF812A8C9E90093F792 /* AcOCUiMenuOverlayWindow.h in Headers */,
+				B90F6CFA12A8C9E90093F792 /* AcOCUiFlyoutMenu.h in Headers */,
+				B90F6CFC12A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.h in Headers */,
+				B90F6CFE12A8C9E90093F792 /* AcOCUiFlyoutWindowController.h in Headers */,
+				B90F6D0012A8C9E90093F792 /* AcOCUiFlyoutWindow.h in Headers */,
+				B90F6D0212A8C9E90093F792 /* AcOCUiBinder.h in Headers */,
+				B90F6D0412A8C9E90093F792 /* AcOCUiPopupButton.h in Headers */,
+				B90F6D0612A8C9E90093F792 /* AcOCUiSegmentedControl.h in Headers */,
+				B90F6D0812A8C9E90093F792 /* AcOCUiSegmentedCell.h in Headers */,
+				B90F6D0A12A8C9E90093F792 /* AcOCUiTableView.h in Headers */,
+				B90F6D0C12A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.h in Headers */,
+				B90F6D0E12A8C9E90093F792 /* AcOCUiSeparator.h in Headers */,
+				B90F6D1012A8C9E90093F792 /* AcOCUiPaletteSeparator.h in Headers */,
+				B90F6D1212A8C9E90093F792 /* AcOCUiOverlayPanel.h in Headers */,
+				B90F6D1412A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.h in Headers */,
+				B90F6D1612A8C9E90093F792 /* AcOCUiTheme.h in Headers */,
+				B90F6D1812A8C9E90093F792 /* AcOCStylizer.h in Headers */,
+				B90F6D1A12A8C9E90093F792 /* AcControlProvider.h in Headers */,
+				B90F6D1B12A8C9E90093F792 /* AcControlStylizer.h in Headers */,
+				B90F6D1D12A8C9E90093F792 /* AcOCUiTextAttributes.h in Headers */,
+				B9703D6812AF6363001F8F8A /* AcOCUiCheckBoxCell.h in Headers */,
+				B9703D7F12AF6734001F8F8A /* AcOCUiOptionButtonCell.h in Headers */,
+				B9703D8312AF6765001F8F8A /* AcOCUiRadioButtonCell.h in Headers */,
+				B9703D8712AF6790001F8F8A /* AcOCUiTabButtonCell.h in Headers */,
+				B951CFDB12B9FA1C00820148 /* AcOCUiPopupButtonCell.h in Headers */,
+				B970BE5A12BB427800C57946 /* AcOCUiThemeOverride.h in Headers */,
+				B970C0B212BEEF6F00C57946 /* AcOCUiControls.h in Headers */,
+				B93FBD4112DECDF00063092A /* AcOCUiScroller.h in Headers */,
+				B93FBD8E12DED5830063092A /* TestScrollView.h in Headers */,
+				B9B82BD112E443B700617687 /* AcOCUiWindow.h in Headers */,
+				F71CF1A213035A81008FBB35 /* AcOCUiAutoCompleteMenuController.h in Headers */,
+				B9B5440612E961DD00402364 /* AcOCUiComboBox.h in Headers */,
+				B9B5442912E96C3300402364 /* AcOCUiControls.pch in Headers */,
+				B9B5543C12E99AE7009756CB /* AcOCUiAutoCompleteDataSource.h in Headers */,
+				B9F8C21B12F65D2C00A1D486 /* AcOCUiCommandMenuItem.h in Headers */,
+				B9F8DE4712F79F5300A1D486 /* AcOCUiComboBoxPopupButtonBridge.h in Headers */,
+				B95108281306950400BDF105 /* NSText+NSTextDelegateEx.h in Headers */,
+				B9FE3F08130B95F000140322 /* AcOCLayoutFrame.h in Headers */,
+				B9FE3F0A130B95F000140322 /* AcOCLayoutFrameHost.h in Headers */,
+				B93744D01337078A00139912 /* AcOCUiComplexTextField.h in Headers */,
+				B93744D21337078A00139912 /* AcOCUiTextFieldWithButton.h in Headers */,
+				B93744D41337078A00139912 /* AcOCUiTextFieldWithCircularSlider.h in Headers */,
+				B93744D61337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.h in Headers */,
+				B93744D81337078A00139912 /* AcOCUiTextFieldWithStepper.h in Headers */,
+				2BDF73B11339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.h in Headers */,
+				B96CB2FA133C9B0F0071AF8C /* TestView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		53DF68FC067E5B5A0090B5B0 /* AcOCUiControlsFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "AcOCUiControlsFramework" */;
+			buildPhases = (
+				53DF68F8067E5B5A0090B5B0 /* Headers */,
+				53DF68F9067E5B5A0090B5B0 /* Resources */,
+				53DF68FA067E5B5A0090B5B0 /* Sources */,
+				53DF68FB067E5B5A0090B5B0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B95D62FB130CFD1100E86587 /* PBXTargetDependency */,
+			);
+			name = AcOCUiControlsFramework;
+			productName = AcOCUiControlsFramework;
+			productReference = 53DF68FD067E5B5A0090B5B0 /* AcOCUiControls.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8D1AC9600486D14A00FE50C9 /* AcOCUiControls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C056398308A954F8003078D8 /* Build configuration list for PBXNativeTarget "AcOCUiControls" */;
+			buildPhases = (
+				8D1AC9660486D14A00FE50C9 /* Resources */,
+				8D1AC96A0486D14A00FE50C9 /* Sources */,
+				8D1AC96E0486D14A00FE50C9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				546DEAF0067F62F70098DCC4 /* PBXTargetDependency */,
+			);
+			name = AcOCUiControls;
+			productInstallPath = "$(HOME)/Developer/Palettes";
+			productName = AcOCUiControls;
+			productReference = 8D1AC9740486D14A00FE50C9 /* AcOCUiControls.ibplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B98E6ADB12AE294A00004602 /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98E6AE112AE294B00004602 /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				B98E6AD812AE294A00004602 /* Resources */,
+				B98E6AD912AE294A00004602 /* Sources */,
+				B98E6ADA12AE294A00004602 /* Frameworks */,
+				B98E6AE912AE29A000004602 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98E6AE312AE295300004602 /* PBXTargetDependency */,
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = B98E6ADC12AE294A00004602 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0259C573FE90428111CA0C5A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C056398B08A954F8003078D8 /* Build configuration list for PBXProject "AcOCUiControls" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0259C574FE90428111CA0C5A /* AcOCUiControls */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B95D62EC130CFD0600E86587 /* Products */;
+					ProjectRef = B95D62EB130CFD0600E86587 /* AcTheme.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				53DF6901067E5B8E0090B5B0 /* All */,
+				8D1AC9600486D14A00FE50C9 /* AcOCUiControls */,
+				53DF68FC067E5B5A0090B5B0 /* AcOCUiControlsFramework */,
+				B98E6ADB12AE294A00004602 /* TestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B95D62F8130CFD0600E86587 /* AcTheme.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AcTheme.framework;
+			remoteRef = B95D62F7130CFD0600E86587 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53DF68F9067E5B5A0090B5B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C113FA12A901F2008139A9 /* flyout_button_overlay.png in Resources */,
+				B9A3B37912AC8C6D00F1B706 /* Localizable.strings in Resources */,
+				B90109D9130BDE16007FC1CC /* scroll_down_triangle_hover.png in Resources */,
+				B90109DA130BDE16007FC1CC /* scroll_left_triangle_hover.png in Resources */,
+				B90109DB130BDE16007FC1CC /* scroll_right_triangle_hover.png in Resources */,
+				B90109DC130BDE16007FC1CC /* scroll_up_triangle_hover.png in Resources */,
+				B90109F9130BDE2E007FC1CC /* Dark_Checkbox_Mixed_Hover.png in Resources */,
+				B90109FA130BDE2E007FC1CC /* Dark_Checkbox_Mixed.png in Resources */,
+				B90109FB130BDE2E007FC1CC /* Dark_Checkbox_Off_Hover.png in Resources */,
+				B90109FC130BDE2E007FC1CC /* Dark_Checkbox_Off.png in Resources */,
+				B90109FD130BDE2E007FC1CC /* Dark_Checkbox_On_Hover.png in Resources */,
+				B90109FE130BDE2E007FC1CC /* Dark_Checkbox_On.png in Resources */,
+				B90109FF130BDE2E007FC1CC /* Dark_collapse_down_hover.png in Resources */,
+				B9010A00130BDE2E007FC1CC /* Dark_collapse_down_idle.png in Resources */,
+				B9010A01130BDE2E007FC1CC /* Dark_collapse_up_hover.png in Resources */,
+				B9010A02130BDE2E007FC1CC /* Dark_collapse_up_idle.png in Resources */,
+				B9010A03130BDE2E007FC1CC /* Dark_lock_closed_hover_12.png in Resources */,
+				B9010A04130BDE2E007FC1CC /* Dark_lock_closed_idle_12.png in Resources */,
+				B9010A05130BDE2E007FC1CC /* Dark_lock_open_hover_12.png in Resources */,
+				B9010A06130BDE2E007FC1CC /* Dark_lock_open_idle_12.png in Resources */,
+				B9010A07130BDE2E007FC1CC /* Dark_Menu_Check.png in Resources */,
+				B9010A08130BDE2E007FC1CC /* Dark_Radio_Mixed_Hover.png in Resources */,
+				B9010A09130BDE2E007FC1CC /* Dark_Radio_Mixed.png in Resources */,
+				B9010A0A130BDE2E007FC1CC /* Dark_Radio_Off_Hover.png in Resources */,
+				B9010A0B130BDE2E007FC1CC /* Dark_Radio_Off.png in Resources */,
+				B9010A0C130BDE2E007FC1CC /* Dark_Radio_On_Hover.png in Resources */,
+				B9010A0D130BDE2E007FC1CC /* Dark_Radio_On.png in Resources */,
+				B9010A0E130BDE2E007FC1CC /* Dark_scroll_down_triangle.png in Resources */,
+				B9010A0F130BDE2E007FC1CC /* Dark_scroll_left_triangle_hover.png in Resources */,
+				B9010A10130BDE2E007FC1CC /* Dark_scroll_left_triangle.png in Resources */,
+				B9010A11130BDE2E007FC1CC /* Dark_scroll_right_triangle_hover.png in Resources */,
+				B9010A12130BDE2E007FC1CC /* Dark_scroll_right_triangle.png in Resources */,
+				B9010A13130BDE2E007FC1CC /* Dark_scroll_up_triangle.png in Resources */,
+				B9010A2D130BDE39007FC1CC /* Light_Checkbox_Mixed_Hover.png in Resources */,
+				B9010A2E130BDE39007FC1CC /* Light_Checkbox_Mixed.png in Resources */,
+				B9010A2F130BDE39007FC1CC /* Light_Checkbox_Off_Hover.png in Resources */,
+				B9010A30130BDE39007FC1CC /* Light_Checkbox_Off.png in Resources */,
+				B9010A31130BDE39007FC1CC /* Light_Checkbox_On_Hover.png in Resources */,
+				B9010A32130BDE39007FC1CC /* Light_Checkbox_On.png in Resources */,
+				B9010A33130BDE39007FC1CC /* Light_collapse_down_hover.png in Resources */,
+				B9010A34130BDE39007FC1CC /* Light_collapse_down_idle.png in Resources */,
+				B9010A35130BDE39007FC1CC /* Light_collapse_up_hover.png in Resources */,
+				B9010A36130BDE39007FC1CC /* Light_collapse_up_idle.png in Resources */,
+				B9010A37130BDE39007FC1CC /* Light_lock_closed_hover_12.png in Resources */,
+				B9010A38130BDE39007FC1CC /* Light_lock_closed_idle_12.png in Resources */,
+				B9010A39130BDE39007FC1CC /* Light_lock_open_hover_12.png in Resources */,
+				B9010A3A130BDE39007FC1CC /* Light_lock_open_idle_12.png in Resources */,
+				B9010A3B130BDE39007FC1CC /* Light_Menu_Check.png in Resources */,
+				B9010A3C130BDE39007FC1CC /* Light_Radio_Off_Hover.png in Resources */,
+				B9010A3D130BDE39007FC1CC /* Light_Radio_Off.png in Resources */,
+				B9010A3E130BDE39007FC1CC /* Light_Radio_On_Hover.png in Resources */,
+				B9010A3F130BDE39007FC1CC /* Light_Radio_On.png in Resources */,
+				B9010A40130BDE39007FC1CC /* Light_scroll_down_triangle.png in Resources */,
+				B9010A41130BDE39007FC1CC /* Light_scroll_left_triangle_hover.png in Resources */,
+				B9010A42130BDE39007FC1CC /* Light_scroll_left_triangle.png in Resources */,
+				B9010A43130BDE39007FC1CC /* Light_scroll_right_triangle_hover.png in Resources */,
+				B9010A44130BDE39007FC1CC /* Light_scroll_right_triangle.png in Resources */,
+				B9010A45130BDE39007FC1CC /* Light_scroll_up_triangle.png in Resources */,
+				84254B5913723DEF00E0D322 /* RuleEditor_Add_Compound.png in Resources */,
+				84254B5A13723DEF00E0D322 /* RuleEditor_Add_Simple.png in Resources */,
+				84254B5B13723DEF00E0D322 /* RuleEditor_Remove.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC9660486D14A00FE50C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */,
+				54D33B2906778E3300C9C163 /* AcOCUiControlsView.classdescription in Resources */,
+				C0A47C500A523B730004BDC3 /* AcOCUiControlsInspector.xib in Resources */,
+				D1AEDE470A6C289C0010C343 /* AcOCUiControlsLibrary.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98E6AD812AE294A00004602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98E6B6A12AE2E6E00004602 /* TestApp.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53DF68FA067E5B5A0090B5B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26C18BC3132E27CD00353DBB /* AcOCUiPopupButtonItem.mm in Sources */,
+				F7F9EAEE12F2117E00D8AC69 /* AcOCUiAutoCompleteTextView.mm in Sources */,
+				B90F6CCD12A8C9E90093F792 /* diagnostic.cpp in Sources */,
+				B90F6CD312A8C9E90093F792 /* AcOCUiNSCell.mm in Sources */,
+				B90F6CD512A8C9E90093F792 /* AcOCUiBox.mm in Sources */,
+				B90F6CD712A8C9E90093F792 /* AcOCUiSliderCell.mm in Sources */,
+				B90F6CD912A8C9E90093F792 /* AcOCUiTabBarView.mm in Sources */,
+				B90F6CDB12A8C9E90093F792 /* AcOCUiMatrixCell.mm in Sources */,
+				B90F6CDD12A8C9E90093F792 /* AcOCUiComplexCellLayout.mm in Sources */,
+				B90F6CDF12A8C9E90093F792 /* AcOCUiButton.mm in Sources */,
+				B90F6CE112A8C9E90093F792 /* AcOCUiButtonCell.mm in Sources */,
+				B90F6CE312A8C9E90093F792 /* AcOCUiRolloverImageButton.mm in Sources */,
+				B90F6CE512A8C9E90093F792 /* AcOCUiLockButton.mm in Sources */,
+				B90F6CE712A8C9E90093F792 /* AcOCUiScrollButton.mm in Sources */,
+				B90F6CE912A8C9E90093F792 /* AcOCUiDisclosureButton.mm in Sources */,
+				B90F6CEB12A8C9E90093F792 /* AcOCUiSquareButton.mm in Sources */,
+				DAB9EEAA137BB0E000EF8633 /* AcOCUiVisorCloseButton.mm in Sources */,
+				B90F6CED12A8C9E90093F792 /* AcOCUiStepperCell.mm in Sources */,
+				B90F6CEF12A8C9E90093F792 /* AcOCUiTextFieldCell.mm in Sources */,
+				EAFF5380133B3EB6009D9B78 /* AcOCUiRuleEditor.mm in Sources */,
+				EAFF5381133B3EB6009D9B78 /* AcOCUiRuleEditorViewSlice.mm in Sources */,
+				EAFF5382133B3EB6009D9B78 /* AcOCUiRuleEditorViewSliceRow.mm in Sources */,
+				EAFF5383133B3EB6009D9B78 /* AcOCUiRuleEditorViewSliceHolder.mm in Sources */,
+				EAFF5384133B3EB6009D9B78 /* AcOCUiRuleEditorCache.mm in Sources */,
+				EAFF5385133B3EB6009D9B78 /* AcOCUiRuleEditorViewUnboundRowHolder.mm in Sources */,
+				B90F6CF112A8C9E90093F792 /* AcOCUiTextFieldEditor.mm in Sources */,
+				B90F6CF312A8C9E90093F792 /* AcOCUiTextLabelCell.mm in Sources */,
+				B90F6CF512A8C9E90093F792 /* AcOCUiFlyoutButton.mm in Sources */,
+				B90F6CF712A8C9E90093F792 /* AcOCUiMenuItemCell.mm in Sources */,
+				B90F6CF912A8C9E90093F792 /* AcOCUiMenuOverlayWindow.mm in Sources */,
+				B90F6CFB12A8C9E90093F792 /* AcOCUiFlyoutMenu.mm in Sources */,
+				B90F6CFD12A8C9E90093F792 /* AcOCUiFlyoutMenuWindow.mm in Sources */,
+				B90F6CFF12A8C9E90093F792 /* AcOCUiFlyoutWindowController.mm in Sources */,
+				B90F6D0112A8C9E90093F792 /* AcOCUiFlyoutWindow.mm in Sources */,
+				B90F6D0312A8C9E90093F792 /* AcOCUiBinder.mm in Sources */,
+				B90F6D0512A8C9E90093F792 /* AcOCUiPopupButton.mm in Sources */,
+				B90F6D0712A8C9E90093F792 /* AcOCUiSegmentedControl.mm in Sources */,
+				B90F6D0912A8C9E90093F792 /* AcOCUiSegmentedCell.mm in Sources */,
+				B90F6D0B12A8C9E90093F792 /* AcOCUiTableView.mm in Sources */,
+				B90F6D0D12A8C9E90093F792 /* AcOCUiOverlayPanelSeparator.mm in Sources */,
+				B90F6D0F12A8C9E90093F792 /* AcOCUiSeparator.mm in Sources */,
+				B90F6D1112A8C9E90093F792 /* AcOCUiPaletteSeparator.mm in Sources */,
+				B90F6D1312A8C9E90093F792 /* AcOCUiOverlayPanel.mm in Sources */,
+				B90F6D1512A8C9E90093F792 /* AcOCUiOverlayPanelFrameView.mm in Sources */,
+				B90F6D1712A8C9E90093F792 /* AcOCUiTheme.mm in Sources */,
+				B90F6D1912A8C9E90093F792 /* AcOCStylizer.mm in Sources */,
+				B90F6D1C12A8C9E90093F792 /* AcControlStylizer.mm in Sources */,
+				B90F6D1E12A8C9E90093F792 /* AcOCUiTextAttributes.mm in Sources */,
+				B90F6D2E12A8CA210093F792 /* NSString+AcOCStringUtils.mm in Sources */,
+				B90F6D2F12A8CA210093F792 /* NSImage+AcOCUiAdditions.mm in Sources */,
+				3D03F21512AEDF5D00407022 /* AcOCUiControls_Utils.mm in Sources */,
+				B9703D6912AF6363001F8F8A /* AcOCUiCheckBoxCell.mm in Sources */,
+				B9703D8012AF6734001F8F8A /* AcOCUiOptionButtonCell.mm in Sources */,
+				B9703D8412AF6765001F8F8A /* AcOCUiRadioButtonCell.mm in Sources */,
+				B9703D8812AF6790001F8F8A /* AcOCUiTabButtonCell.mm in Sources */,
+				B9703E7912AF7D35001F8F8A /* FrameworkInit.mm in Sources */,
+				B951CFDC12B9FA1C00820148 /* AcOCUiPopupButtonCell.mm in Sources */,
+				B970BE9D12BB4F6B00C57946 /* AcOCUiThemeOverride.mm in Sources */,
+				B970BFB412BB5D6300C57946 /* NSObject+HHAssociatedObjects.m in Sources */,
+				B970C0B312BEEF6F00C57946 /* AcOCUiControls.m in Sources */,
+				B93FBD4212DECDF00063092A /* AcOCUiScroller.mm in Sources */,
+				B93FBD8F12DED5830063092A /* TestScrollView.m in Sources */,
+				B9B82BD012E443B700617687 /* AcOCUiWindow.mm in Sources */,
+				F71CF1A313035A81008FBB35 /* AcOCUiAutoCompleteMenuController.mm in Sources */,
+				B9B5440712E961DD00402364 /* AcOCUiComboBox.mm in Sources */,
+				B9B5543D12E99AE7009756CB /* AcOCUiComboBoxPopupButtonBridge.mm in Sources */,
+				B9F8C21C12F65D2C00A1D486 /* AcOCUiCommandMenuItem.mm in Sources */,
+				B95108271306950400BDF105 /* NSText+NSTextDelegateEx.mm in Sources */,
+				B9FE3F09130B95F000140322 /* AcOCLayoutFrame.m in Sources */,
+				B9FE3F0B130B95F000140322 /* AcOCLayoutFrameHost.m in Sources */,
+				B93744D11337078A00139912 /* AcOCUiComplexTextField.mm in Sources */,
+				B93744D31337078A00139912 /* AcOCUiTextFieldWithButton.mm in Sources */,
+				B93744D51337078A00139912 /* AcOCUiTextFieldWithCircularSlider.mm in Sources */,
+				B93744D71337078A00139912 /* AcOCUiTextFieldWithHorizontalSlider.mm in Sources */,
+				B93744D91337078A00139912 /* AcOCUiTextFieldWithStepper.mm in Sources */,
+				2BDF73B21339C32D00EB63AD /* AcOCUiInfoCheckBoxCell.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC96A0486D14A00FE50C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC96C0486D14A00FE50C9 /* AcOCUiControlsInspector.m in Sources */,
+				C044829F0C3328F4006E818F /* AcOCUiControlsViewIntegration.m in Sources */,
+				B97040E312B07B2F001F8F8A /* AcOCUiControlsView.m in Sources */,
+				B970BFF412BB66CD00C57946 /* AcOCUiControlsIBPlugin.m in Sources */,
+				F71CF1A113035A81008FBB35 /* AcOCUiAutoCompleteMenuController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98E6AD912AE294A00004602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98E6B1712AE2B7C00004602 /* TestAppDelegate.mm in Sources */,
+				B98E6B4912AE2E1300004602 /* main.m in Sources */,
+				2BDF701A133893DD00EB63AD /* TestTreeNode.mm in Sources */,
+				B9760A151340839000859E13 /* TestView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53DF6903067E5B930090B5B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1AC9600486D14A00FE50C9 /* AcOCUiControls */;
+			targetProxy = 53DF6902067E5B930090B5B0 /* PBXContainerItemProxy */;
+		};
+		53DF6905067E5B930090B5B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53DF68FC067E5B5A0090B5B0 /* AcOCUiControlsFramework */;
+			targetProxy = 53DF6904067E5B930090B5B0 /* PBXContainerItemProxy */;
+		};
+		546DEAF0067F62F70098DCC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53DF68FC067E5B5A0090B5B0 /* AcOCUiControlsFramework */;
+			targetProxy = 546DEAEF067F62F70098DCC4 /* PBXContainerItemProxy */;
+		};
+		B95D62FB130CFD1100E86587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AcTheme;
+			targetProxy = B95D62FA130CFD1100E86587 /* PBXContainerItemProxy */;
+		};
+		B98E6AE312AE295300004602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53DF68FC067E5B5A0090B5B0 /* AcOCUiControlsFramework */;
+			targetProxy = B98E6AE212AE295300004602 /* PBXContainerItemProxy */;
+		};
+		B98E6AF512AE2A1200004602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98E6ADB12AE294A00004602 /* TestApp */;
+			targetProxy = B98E6AF412AE2A1200004602 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D1AC97B0486D23100FE50C9 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B98E6B6812AE2E6E00004602 /* TestApp.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B98E6B6912AE2E6E00004602 /* English */,
+			);
+			name = TestApp.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B98E6ADF12AE294B00004602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98E6B2312AE2D7500004602 /* TestApp.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B98E6AE012AE294B00004602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98E6B2312AE2D7500004602 /* TestApp.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			};
+			name = Release;
+		};
+		C056398008A954F8003078D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90F6C5812A8C9170093F792 /* AcOCUiControls.xcconfig */;
+			buildSettings = {
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				USER_HEADER_SEARCH_PATHS = "$GINC/osx/Acx $AIRLOOKTK/include/AdCoreUnits/internal $GINC/coresdk $LRC/acadapp $COMPSRC/gs $COMPSRC/gs/gs1/api/inc $COMPTOP/Platform/WinStubs/inc $GSRC $ACDBX/db/imp/inc $GSRC/coreacad/ $GSRC/coreapps/sendminidmp/osx/inc $COREAPPS/osx/AcOCUi $COREDLL/win $HEIDISDK/source/ $GINC/arxsdk $GINC/VerticalSDK $GINC $GINC/osx $COMPTOP $GINC/dbxsdk $ACDBX/gelib/imp/inc $GINC/comp $ASM/kern $ASM/base $ASM/law $ASM/cstr $ASM/intr $ASM/ofst $ACDBX/gelib/ge $WHIP/source $COMPTOP/Platform $GSRC/hardcopy/include $GSRC/adshare/include $GSRC/coreacad $ACDBX/db/api/inc $ACDBX/geoment/modlr $ASM/kern $ASM/AHL $ACDBX/acis_bits/util_lib $ACCORE/acgeom $ASM/bool $ASM/blnd $ASM/eulr $ASM/lop $ASM/swp $ACCORE/acgeom $ACCORE/rxacad $ACCORE/previnput $DBXAPPS/Scene/ExtUtil $ACDBX/AdImaging/ATIL/inc $GBIN64/bin_inc $ACCORE/imp $LRC/AcCm/AcCmUi $GSRC/hardcopy/pltcfgmgr $HEIDISDK/source $COREDLL/plotapi/ $COMPSRC/plotgrad/ $COMPSRC/StringAndFileLib/ $LRC/** $LRC/acadapp $COREAPPS/opm/opmutil $GINC/adlm/inc $COMPSRC/Typelib/res";
+			};
+			name = Debug;
+		};
+		C056398108A954F8003078D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90F6C5812A8C9170093F792 /* AcOCUiControls.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				USER_HEADER_SEARCH_PATHS = "$GINC/osx/Acx $AIRLOOKTK/include/AdCoreUnits/internal $GINC/coresdk $LRC/acadapp $COMPSRC/gs $COMPSRC/gs/gs1/api/inc $COMPTOP/Platform/WinStubs/inc $GSRC $ACDBX/db/imp/inc $GSRC/coreacad/ $GSRC/coreapps/sendminidmp/osx/inc $COREAPPS/osx/AcOCUi $COREDLL/win $HEIDISDK/source/ $GINC/arxsdk $GINC/VerticalSDK $GINC $GINC/osx $COMPTOP $GINC/dbxsdk $ACDBX/gelib/imp/inc $GINC/comp $ASM/kern $ASM/base $ASM/law $ASM/cstr $ASM/intr $ASM/ofst $ACDBX/gelib/ge $WHIP/source $COMPTOP/Platform $GSRC/hardcopy/include $GSRC/adshare/include $GSRC/coreacad $ACDBX/db/api/inc $ACDBX/geoment/modlr $ASM/kern $ASM/AHL $ACDBX/acis_bits/util_lib $ACCORE/acgeom $ASM/bool $ASM/blnd $ASM/eulr $ASM/lop $ASM/swp $ACCORE/acgeom $ACCORE/rxacad $ACCORE/previnput $DBXAPPS/Scene/ExtUtil $ACDBX/AdImaging/ATIL/inc $GBIN64/bin_inc $ACCORE/imp $LRC/AcCm/AcCmUi $GSRC/hardcopy/pltcfgmgr $HEIDISDK/source $COREDLL/plotapi/ $COMPSRC/plotgrad/ $COMPSRC/StringAndFileLib/ $LRC/** $LRC/acadapp $COREAPPS/opm/opmutil $GINC/adlm/inc $COMPSRC/Typelib/res";
+			};
+			name = Release;
+		};
+		C056398408A954F8003078D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					$inherited,
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/Library/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AcOCUiControls_Prefix.pch;
+				INFOPLIST_FILE = $COREACAD/osxbld/InfoPlist/Info_GenericFramework_IBPlugin.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks/AcOCUiControls.framework/Resources";
+				PRINCIPAL_CLASS_NAME = AcOCUiControlsIBPlugin;
+				PRODUCT_NAME = AcOCUiControls;
+				WRAPPER_EXTENSION = ibplugin;
+			};
+			name = Debug;
+		};
+		C056398508A954F8003078D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					$inherited,
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/Library/Frameworks\"";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AcOCUiControls_Prefix.pch;
+				INFOPLIST_FILE = $COREACAD/osxbld/InfoPlist/Info_GenericFramework_IBPlugin.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks/AcOCUiControls.framework/Resources";
+				PRINCIPAL_CLASS_NAME = AcOCUiControlsIBPlugin;
+				PRODUCT_NAME = AcOCUiControls;
+				WRAPPER_EXTENSION = ibplugin;
+			};
+			name = Release;
+		};
+		C056398808A954F8003078D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = All;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C056398908A954F8003078D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				PRODUCT_NAME = All;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		C056398C08A954F8003078D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B95D633A130CFDCF00E86587 /* DebugAcadProjectTWAE.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C056398D08A954F8003078D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B95D633B130CFDCF00E86587 /* ReleaseAcadProjectTWAE.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B98E6AE112AE294B00004602 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98E6ADF12AE294B00004602 /* Debug */,
+				B98E6AE012AE294B00004602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "AcOCUiControlsFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C056398008A954F8003078D8 /* Debug */,
+				C056398108A954F8003078D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C056398308A954F8003078D8 /* Build configuration list for PBXNativeTarget "AcOCUiControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C056398408A954F8003078D8 /* Debug */,
+				C056398508A954F8003078D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C056398708A954F8003078D8 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C056398808A954F8003078D8 /* Debug */,
+				C056398908A954F8003078D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C056398B08A954F8003078D8 /* Build configuration list for PBXProject "AcOCUiControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C056398C08A954F8003078D8 /* Debug */,
+				C056398D08A954F8003078D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0259C573FE90428111CA0C5A /* Project object */;
+}

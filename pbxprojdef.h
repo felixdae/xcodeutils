@@ -9,7 +9,7 @@
 #ifndef xcodeutils_parserdef_h
 #define xcodeutils_parserdef_h
 
-#include <list>
+#include <vector>
 #include <map>
 #include <string>
 
@@ -21,7 +21,7 @@ public:
     virtual ~PBXItem();
 };
 
-typedef std::list<PBXItem*> PBXItemList;
+typedef std::vector<PBXItem*> PBXItemList;
 
 class PBXValue {
     std::string mComment;
@@ -34,7 +34,7 @@ public:
     void setComment(const char* newComment);
 };
 
-typedef std::list<PBXValue*> PBXValueList;
+typedef std::vector<PBXValue*> PBXValueList;
 
 class PBXValueRef : public PBXValue {
     std::string mId;
@@ -88,6 +88,7 @@ public:
     
     const_iterator begin() const;
     const_iterator end()   const;
+	size_t		   count() const;
 };
 
 class PBXCommentItem : public PBXItem {

@@ -34,7 +34,7 @@ extern "C"
     void yyerror(const char *str)
     {
         sFailed = true;
-        fprintf(stdout, "[%d]error: %s\n", yylineno, str);
+        fprintf(stderr, "[%d]error: %s\n", yylineno, str);
     }
     
     static PBXFile* gpDoc = NULL;
@@ -55,7 +55,10 @@ extern "C"
         
         //parse
         yyin = fopen(filePath, "r");
-        yyparse();
+		if (yyin != NULL)
+		{
+			yyparse();
+		}
         
         if (sFailed)
             delete gpDoc;
@@ -133,7 +136,7 @@ statements  :   /* Empty */
                     $$ = $1;
                 }
                 ;
-
+                
 statement   :   WORD         ASSIGN value         SEMICOLON
                 {
                     $$ = new PBXAssignment($1, $3);
@@ -228,7 +231,13 @@ values      :   /* Empty */
                     $$ = new PBXArray;
                 }
                 ;
-              |  values value COMMA
+              | values value
+                {
+                    $1->addValue($2);
+                    $$ = $1;
+                }
+                ;
+              | values value COMMA
                 {
                     $1->addValue($2);
                     $$ = $1;

@@ -20,8 +20,8 @@ PBXBlock::~PBXBlock()
 {
     mValueMap.clear();
     
-    std::list<PBXItem*>::iterator iter = mStatements.begin();
-    std::list<PBXItem*>::iterator end  = mStatements.end();
+    PBXItemList::iterator iter = mStatements.begin();
+    PBXItemList::iterator end  = mStatements.end();
     for (; iter != end; ++iter) {
         delete *iter;
     }
@@ -45,12 +45,12 @@ const PBXValue* PBXBlock::valueForKey(const char* name) const
     return NULL;
 }
     
-std::list<PBXItem*>::const_iterator PBXBlock::begin() const
+PBXItemList::const_iterator PBXBlock::begin() const
 {
     return mStatements.begin();
 }
 
-std::list<PBXItem*>::const_iterator PBXBlock::end()   const
+PBXItemList::const_iterator PBXBlock::end()   const
 {
     return mStatements.end();
 }
@@ -159,8 +159,8 @@ PBXArray::PBXArray()
 }
 PBXArray::~PBXArray()
 {
-    std::list<PBXValue*>::iterator iter = mValues.begin();
-    std::list<PBXValue*>::iterator end  = mValues.end();
+    PBXValueList::iterator iter = mValues.begin();
+    PBXValueList::iterator end  = mValues.end();
     for (; iter != end; ++iter) {
         delete *iter;
     }
@@ -169,13 +169,17 @@ void PBXArray::addValue(PBXValue* value)
 {
     mValues.push_back(value);
 }
-std::list<PBXValue*>::const_iterator PBXArray::begin() const
+PBXValueList::const_iterator PBXArray::begin() const
 {
     return mValues.begin();
 }
-std::list<PBXValue*>::const_iterator PBXArray::end()   const
+PBXValueList::const_iterator PBXArray::end()   const
 {
     return mValues.end();
+}
+size_t PBXArray::count() const
+{
+	return mValues.size();
 }
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -46,11 +46,14 @@ static void printTarget(const PBXFile* doc, const PBXBlock* target)
 {
     const PBXText* nameNode = dynamic_cast<const PBXText*>(target->valueForKey("name"));
     if (!nameNode) return;
-        
-    std::cout << nameNode->text() << std::endl;
-    
+            
     const PBXArray* depRefs = dynamic_cast<const PBXArray*>(target->valueForKey("dependencies"));
     if (!depRefs) return;
+	
+	if (depRefs->count() == 0) {
+		std::cout << nameNode->text() << ";" << std::endl;
+		return;
+	}
     
     for (PBXArray::const_iterator itor = depRefs->begin(); itor != depRefs->end(); ++itor) 
     {
@@ -61,7 +64,7 @@ static void printTarget(const PBXFile* doc, const PBXBlock* target)
         const PBXText* depNameNode = dynamic_cast<const PBXText*>(dep->valueForKey("name"));
         if (!depNameNode) continue;
         
-        std::cout << "\t" << depNameNode->text() << std::endl;
+        std::cout << nameNode->text() << " -> " << depNameNode->text() << ";" << std::endl;
     }
 }
 

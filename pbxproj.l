@@ -34,13 +34,14 @@
                                 return INTEGER;     
                             }
                             
-[a-zA-Z\.\/\$\-_\*\<\>]+    {   yylval.string = strdup(yytext);
+[0-9a-zA-Z\.\/\$\-_\*\<\>]+  {   yylval.string = strdup(yytext);
                                 return WORD;        
                             }
                             
 =                           {   return ASSIGN;      }
 
-\"[^"]*\"                   {   yylval.string = strdup(yytext);
+
+\"([^"\\]*(\\.[^"\\]*)*)\"  {   yylval.string = strdup(yytext);
                                 return STRING;      
                             }
                                                         
