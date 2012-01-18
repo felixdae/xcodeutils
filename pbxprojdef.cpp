@@ -8,7 +8,7 @@
 
 #include "pbxprojdef.h"
 #include <iostream>
-
+#include <sstream>
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -36,6 +36,7 @@ void PBXBlock::addStatement(PBXItem* statement)
         mValueMap.insert(valuePair);
     }
 }
+
 const PBXValue* PBXBlock::valueForKey(const char* name) const
 {
     PBXValueMap::const_iterator itor = mValueMap.find(name);
@@ -53,6 +54,11 @@ PBXItemList::const_iterator PBXBlock::begin() const
 PBXItemList::const_iterator PBXBlock::end()   const
 {
     return mStatements.end();
+}
+
+const PBXBlock* PBXBlock::cast(const PBXValue* value)
+{
+    return dynamic_cast<const PBXBlock*> (value);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -86,6 +92,11 @@ const char* PBXValueRef::id() const
     return mId.c_str();
 }
 
+const PBXValueRef* PBXValueRef::cast(const PBXValue* value)
+{
+    return dynamic_cast<const PBXValueRef*> (value);
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 PBXText::PBXText(const char* text)
 {
@@ -94,6 +105,11 @@ PBXText::PBXText(const char* text)
 const char* PBXText::text() const
 {
     return mText.c_str();
+}
+
+const PBXText* PBXText::cast(const PBXValue* value)
+{
+    return dynamic_cast<const PBXText*> (value);
 }
 
 
@@ -182,6 +198,11 @@ size_t PBXArray::count() const
 	return mValues.size();
 }
 
+const PBXArray* PBXArray::cast(const PBXValue* value)
+{
+    return dynamic_cast<const PBXArray*> (value);
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 PBXCommentItem::PBXCommentItem(const std::string& comment)
 {
@@ -223,10 +244,38 @@ void PBXFile::setBlock(PBXBlock* block)
     mBlock = block;
 }
 
-
 const PBXValue* PBXFile::valueForKey(const char* keyName) const
 {
     return mBlock ? mBlock->valueForKey(keyName) : NULL;
+}
+
+const PBXValue* PBXFile::valueForKeyPath(const PBXBlock* block, const char* keyPath) const
+{
+    if (block == NULL)
+        return NULL;
+    
+    const PBXValue* value = NULL;
+    const PBXBlock* parent = block;
+    std::istringstream iss(keyPath);
+    std::string key;
+    
+    while (getline(iss, key, '.')) {
+        value = parent->valueForKey(key.c_str());  
+        const PBXValueRef* valueRef = PBXValueRef::cast(value);
+        if (valueRef) {
+            const PBXBlock* child = PBXBlock::cast(deref(valueRef));
+            if (child) {
+                parent = child;
+            }
+        }
+    }
+    
+    return value;
+}
+
+const PBXValue* PBXFile::valueForKeyPath(const char* keyPath) const
+{
+    return valueForKeyPath(mBlock, keyPath);
 }
 
 const PBXValue* PBXFile::deref(const PBXValueRef* ref) const
@@ -238,6 +287,27 @@ const PBXValue* PBXFile::deref(const PBXValueRef* ref) const
 }
 
 
+#include <sys/stat.h>
+#include <sys/errno.h>
 
 
+extern "C" bool loadDocument(const char* projectPath, PBXFile **pDoc);
+extern "C" bool loadProject(const char* projectPath, PBXFile **pDoc)
+{
+    if (projectPath == NULL || pDoc == NULL)
+        return false;
+    
+    //determine file exists.
+    struct stat st;
+    if (stat(projectPath, &st) == ENOENT)
+        return false;
+    
+    std::string projectFile =  projectPath;
+    if (st.st_mode & S_IFDIR)
+    {
+        projectFile += "/project.pbxproj";
+    }
+    
+    return loadDocument(projectFile.c_str(), pDoc);
+}
 

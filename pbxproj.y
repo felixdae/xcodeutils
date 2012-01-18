@@ -11,8 +11,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <list>
-#include <sys/stat.h>
-#include <sys/errno.h>
 #include "pbxprojdef.h"
 
 extern "C"
@@ -40,14 +38,6 @@ extern "C"
     static PBXFile* gpDoc = NULL;
     bool loadDocument(const char* filePath, PBXFile **pDoc)
     {
-        if (filePath == NULL || pDoc == NULL)
-            return false;
-        
-        //determine file exists.
-        struct stat tmp;
-        if (stat(filePath, &tmp) == ENOENT)
-            return false;
-
         //init
         *pDoc = NULL;
         gpDoc = new PBXFile;

@@ -41,6 +41,7 @@ class PBXValueRef : public PBXValue {
 public:
     PBXValueRef(const char* id);
     const char* id() const;
+    static const PBXValueRef* cast(const PBXValue* value);
 };
 
 class PBXText : public PBXValue {
@@ -48,6 +49,7 @@ class PBXText : public PBXValue {
 public:
     PBXText(const char* text);
     const char* text() const;
+    static const PBXText* cast(const PBXValue* value);
 };
 
 class PBXInteger : public PBXValue {
@@ -74,6 +76,8 @@ public:
     
     PBXItemList::const_iterator begin() const;
     PBXItemList::const_iterator end()   const;
+    
+    static const PBXBlock* cast(const PBXValue* value);
 };   
 
 class PBXArray : public PBXValue {
@@ -89,6 +93,7 @@ public:
     const_iterator begin() const;
     const_iterator end()   const;
 	size_t		   count() const;
+    static const PBXArray* cast(const PBXValue* value);
 };
 
 class PBXCommentItem : public PBXItem {
@@ -125,11 +130,13 @@ public:
     const PBXBlock* block() const;
     void setBlock(PBXBlock* block);
     
-    const PBXValue* valueForKey(const char* keyName) const;
-    const PBXValue* deref(const PBXValueRef* ref) const;
+    const PBXValue* valueForKey(const char* keyName) const;  
+    const PBXValue* valueForKeyPath(const char* keyPath) const;
+    const PBXValue* valueForKeyPath(const PBXBlock* block, const char* keyPath) const;
+    const PBXValue* deref(const PBXValueRef* ref) const;;
 };
 
-extern "C" bool loadDocument(const char* filePath, PBXFile **pDoc);
+extern "C" bool loadProject(const char* projectPath, PBXFile **pDoc);
 
 
 #endif

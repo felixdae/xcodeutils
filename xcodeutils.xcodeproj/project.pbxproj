@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9FE94CF14C6C90100CF176A /* xctool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9FE94CE14C6C90100CF176A /* xctool.cpp */; };
+		B9FE94D314C6C92E00CF176A /* libxcodeutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC9D70713E2EB50008E074B /* libxcodeutils.a */; };
 		CE110DE913F49BED006D19D1 /* xcdep in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEA815BB13E95FE7004F8A6E /* xcdep */; };
 		CE43954B13F41047007C9DDA /* AcOCUiControls.pbxproj in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE43954A13F41006007C9DDA /* AcOCUiControls.pbxproj */; };
 		CE8D4CE513E535DF0065C10F /* pbxprojdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE8D4CE413E535DF0065C10F /* pbxprojdef.cpp */; };
@@ -37,6 +39,13 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
+		B9FE94FF14C6CE2B00CF176A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC9D6E713E2EA0B008E074B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC9D70613E2EB50008E074B /* xcodeutils */;
+			remoteInfo = xcodeutils;
+		};
 		CEA815C713E96028004F8A6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEC9D6E713E2EA0B008E074B /* Project object */;
@@ -98,6 +107,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B9FE94CA14C6C8D400CF176A /* xctool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xctool; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FE94CE14C6C90100CF176A /* xctool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xctool.cpp; sourceTree = "<group>"; };
 		CE43954A13F41006007C9DDA /* AcOCUiControls.pbxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.pbxproject; path = AcOCUiControls.pbxproj; sourceTree = "<group>"; };
 		CE8D4CE413E535DF0065C10F /* pbxprojdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pbxprojdef.cpp; sourceTree = "<group>"; };
 		CEA815BB13E95FE7004F8A6E /* xcdep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xcdep; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +126,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B9FE94C814C6C8D400CF176A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FE94D314C6C92E00CF176A /* libxcodeutils.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEA815B813E95FE7004F8A6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +160,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9FE94C614C6C8B900CF176A /* xctool */ = {
+			isa = PBXGroup;
+			children = (
+				B9FE94CE14C6C90100CF176A /* xctool.cpp */,
+			);
+			name = xctool;
+			sourceTree = "<group>";
+		};
 		CEA815BD13E95FE7004F8A6E /* xcdep */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +184,7 @@
 				CEC9D70213E2EA49008E074B /* libxcodeutils */,
 				CEC9D6F313E2EA0B008E074B /* xcdump */,
 				CEA815BD13E95FE7004F8A6E /* xcdep */,
+				B9FE94C614C6C8B900CF176A /* xctool */,
 				CEC9D6F113E2EA0B008E074B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,6 +195,7 @@
 				CEC9D6F013E2EA0B008E074B /* xcdump */,
 				CEC9D70713E2EB50008E074B /* libxcodeutils.a */,
 				CEA815BB13E95FE7004F8A6E /* xcdep */,
+				B9FE94CA14C6C8D400CF176A /* xctool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,6 +244,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B9FE94C914C6C8D400CF176A /* xctool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9FE94D014C6C90200CF176A /* Build configuration list for PBXNativeTarget "xctool" */;
+			buildPhases = (
+				B9FE94C714C6C8D400CF176A /* Sources */,
+				B9FE94C814C6C8D400CF176A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9FE950014C6CE2B00CF176A /* PBXTargetDependency */,
+			);
+			name = xctool;
+			productName = xctool;
+			productReference = B9FE94CA14C6C8D400CF176A /* xctool */;
+			productType = "com.apple.product-type.tool";
+		};
 		CEA815BA13E95FE7004F8A6E /* xcdep */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA815C213E95FE7004F8A6E /* Build configuration list for PBXNativeTarget "xcdep" */;
@@ -294,11 +340,20 @@
 				CEC9D70613E2EB50008E074B /* xcodeutils */,
 				CEC9D6EF13E2EA0B008E074B /* xcdump */,
 				CEA815BA13E95FE7004F8A6E /* xcdep */,
+				B9FE94C914C6C8D400CF176A /* xctool */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B9FE94C714C6C8D400CF176A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FE94CF14C6C90100CF176A /* xctool.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEA815B713E95FE7004F8A6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +383,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B9FE950014C6CE2B00CF176A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC9D70613E2EB50008E074B /* xcodeutils */;
+			targetProxy = B9FE94FF14C6CE2B00CF176A /* PBXContainerItemProxy */;
+		};
 		CEA815C813E96028004F8A6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEC9D70613E2EB50008E074B /* xcodeutils */;
@@ -341,6 +401,36 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B9FE94CC14C6C8D500CF176A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = xctool;
+			};
+			name = Debug;
+		};
+		B9FE94CD14C6C8D500CF176A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = xctool;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		CEA815C313E95FE7004F8A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -433,6 +523,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B9FE94D014C6C90200CF176A /* Build configuration list for PBXNativeTarget "xctool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9FE94CC14C6C8D500CF176A /* Debug */,
+				B9FE94CD14C6C8D500CF176A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEA815C213E95FE7004F8A6E /* Build configuration list for PBXNativeTarget "xcdep" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

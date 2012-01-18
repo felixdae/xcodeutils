@@ -49,7 +49,7 @@ int main (int argc, const char * argv[])
     std::string projectFile(projectDir );
     
     PBXFile * pDoc = NULL;
-    if (!loadDocument(projectFile.c_str(), &pDoc)) {
+    if (!loadProject(projectFile.c_str(), &pDoc)) {
         std::cout<<"failed to load "<<projectFile<<std::endl;
         return -1;
     }
